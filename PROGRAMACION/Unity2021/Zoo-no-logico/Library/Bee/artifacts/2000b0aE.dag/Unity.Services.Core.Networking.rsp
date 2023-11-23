@@ -27,6 +27,7 @@
 -define:UNITY_2021_2_OR_NEWER
 -define:UNITY_2021_3_OR_NEWER
 -define:UNITY_INCLUDE_TESTS
+-define:UNITY_ANALYTICS
 -define:USE_SEARCH_ENGINE_API
 -define:USE_SEARCH_TABLE
 -define:USE_SEARCH_MODULE
@@ -304,24 +305,35 @@
 -r:"C:/Program Files/Unity/Hub/Editor/2021.3.13f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Xml.XPath.XDocument.dll"
 -r:"C:/Program Files/Unity/Hub/Editor/2021.3.13f1/Editor/Data/NetStandard/Extensions/2.0.0/System.Runtime.InteropServices.WindowsRuntime.dll"
 -r:"C:/Program Files/Unity/Hub/Editor/2021.3.13f1/Editor/Data/NetStandard/ref/2.1.0/netstandard.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/2021.3.13f1/Editor/Data/PlaybackEngines/AndroidPlayer/Unity.Android.Gradle.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/2021.3.13f1/Editor/Data/PlaybackEngines/AndroidPlayer/Unity.Android.Types.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/2021.3.13f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/2021.3.13f1/Editor/Data/PlaybackEngines/AppleTVSupport/UnityEditor.AppleTV.Extensions.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/2021.3.13f1/Editor/Data/PlaybackEngines/AppleTVSupport/UnityEditor.iOS.Extensions.Xcode.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/2021.3.13f1/Editor/Data/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Common.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/2021.3.13f1/Editor/Data/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/2021.3.13f1/Editor/Data/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Xcode.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/2021.3.13f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/UnityEditor.LinuxStandalone.Extensions.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/2021.3.13f1/Editor/Data/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/2021.3.13f1/Editor/Data/PlaybackEngines/MetroSupport/UnityEditor.UWP.Extensions.dll"
 -r:"C:/Program Files/Unity/Hub/Editor/2021.3.13f1/Editor/Data/PlaybackEngines/WebGLSupport/Managed/UnityEngine.WebGLModule.dll"
 -r:"C:/Program Files/Unity/Hub/Editor/2021.3.13f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll"
 -r:"C:/Program Files/Unity/Hub/Editor/2021.3.13f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll"
--r:"D:/GitHub/zoo-no-logico-PDV/PROGRAMACION/Unity2021/Zoo-no-logico/Library/PackageCache/com.unity.analytics@3.6.12/AnalyticsStandardEvents/Unity.Analytics.StandardEvents.dll"
--r:"D:/GitHub/zoo-no-logico-PDV/PROGRAMACION/Unity2021/Zoo-no-logico/Library/PackageCache/com.unity.analytics@3.6.12/Unity.Analytics.Editor.dll"
--r:"D:/GitHub/zoo-no-logico-PDV/PROGRAMACION/Unity2021/Zoo-no-logico/Library/PackageCache/com.unity.analytics@3.6.12/Unity.Analytics.Tracker.dll"
--r:"D:/GitHub/zoo-no-logico-PDV/PROGRAMACION/Unity2021/Zoo-no-logico/Library/PackageCache/com.unity.collab-proxy@1.17.6/Lib/Editor/PlasticSCM/log4netPlastic.dll"
--r:"D:/GitHub/zoo-no-logico-PDV/PROGRAMACION/Unity2021/Zoo-no-logico/Library/PackageCache/com.unity.collab-proxy@1.17.6/Lib/Editor/PlasticSCM/Unity.Plastic.Antlr3.Runtime.dll"
--r:"D:/GitHub/zoo-no-logico-PDV/PROGRAMACION/Unity2021/Zoo-no-logico/Library/PackageCache/com.unity.collab-proxy@1.17.6/Lib/Editor/PlasticSCM/Unity.Plastic.Newtonsoft.Json.dll"
--r:"D:/GitHub/zoo-no-logico-PDV/PROGRAMACION/Unity2021/Zoo-no-logico/Library/PackageCache/com.unity.collab-proxy@1.17.6/Lib/Editor/PlasticSCM/unityplastic.dll"
--r:"D:/GitHub/zoo-no-logico-PDV/PROGRAMACION/Unity2021/Zoo-no-logico/Library/PackageCache/com.unity.nuget.newtonsoft-json@3.0.2/Runtime/Newtonsoft.Json.dll"
+-r:"C:/Users/pc/Desktop/zoo-no-logico-SS/PROGRAMACION/Unity2021/Zoo-no-logico/Library/PackageCache/com.unity.analytics@3.6.12/AnalyticsStandardEvents/Unity.Analytics.StandardEvents.dll"
+-r:"C:/Users/pc/Desktop/zoo-no-logico-SS/PROGRAMACION/Unity2021/Zoo-no-logico/Library/PackageCache/com.unity.analytics@3.6.12/Unity.Analytics.Editor.dll"
+-r:"C:/Users/pc/Desktop/zoo-no-logico-SS/PROGRAMACION/Unity2021/Zoo-no-logico/Library/PackageCache/com.unity.analytics@3.6.12/Unity.Analytics.Tracker.dll"
+-r:"C:/Users/pc/Desktop/zoo-no-logico-SS/PROGRAMACION/Unity2021/Zoo-no-logico/Library/PackageCache/com.unity.collab-proxy@1.17.6/Lib/Editor/PlasticSCM/log4netPlastic.dll"
+-r:"C:/Users/pc/Desktop/zoo-no-logico-SS/PROGRAMACION/Unity2021/Zoo-no-logico/Library/PackageCache/com.unity.collab-proxy@1.17.6/Lib/Editor/PlasticSCM/Unity.Plastic.Antlr3.Runtime.dll"
+-r:"C:/Users/pc/Desktop/zoo-no-logico-SS/PROGRAMACION/Unity2021/Zoo-no-logico/Library/PackageCache/com.unity.collab-proxy@1.17.6/Lib/Editor/PlasticSCM/Unity.Plastic.Newtonsoft.Json.dll"
+-r:"C:/Users/pc/Desktop/zoo-no-logico-SS/PROGRAMACION/Unity2021/Zoo-no-logico/Library/PackageCache/com.unity.collab-proxy@1.17.6/Lib/Editor/PlasticSCM/unityplastic.dll"
+-r:"C:/Users/pc/Desktop/zoo-no-logico-SS/PROGRAMACION/Unity2021/Zoo-no-logico/Library/PackageCache/com.unity.nuget.newtonsoft-json@3.2.1/Runtime/Newtonsoft.Json.dll"
 -r:"Library/Bee/artifacts/2000b0aE.dag/Unity.Services.Core.Internal.ref.dll"
 -r:"Library/Bee/artifacts/2000b0aE.dag/Unity.Services.Core.ref.dll"
 -r:"Library/Bee/artifacts/2000b0aE.dag/UnityEditor.UI.ref.dll"
 -r:"Library/Bee/artifacts/2000b0aE.dag/UnityEngine.UI.ref.dll"
-"Library/PackageCache/com.unity.services.core@1.5.2/Runtime/Networking/AssemblyInfo.cs"
-"Library/PackageCache/com.unity.services.core@1.5.2/Runtime/Networking/HttpServiceConfig.cs"
-"Library/PackageCache/com.unity.services.core@1.5.2/Runtime/Networking/UnityWebRequestClient.cs"
+"Library/PackageCache/com.unity.services.core@1.10.1/Runtime/Networking/AssemblyInfo.cs"
+"Library/PackageCache/com.unity.services.core@1.10.1/Runtime/Networking/HttpServiceConfig.cs"
+"Library/PackageCache/com.unity.services.core@1.10.1/Runtime/Networking/UnityWebRequestClient.cs"
 -langversion:9.0
 
 /deterministic
