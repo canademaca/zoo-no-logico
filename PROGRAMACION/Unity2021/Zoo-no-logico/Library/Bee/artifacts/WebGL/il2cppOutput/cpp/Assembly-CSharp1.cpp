@@ -15381,7 +15381,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SaveSystem_SaveGame_mC41C9D0B0ADF56E303C
 		BinaryFormatter_Serialize_mF365DA7FA76E03707336375616D757397CF2992E(L_0, L_7, L_8, NULL);
 		// stream.Close();
 		FileStream_t07C7222EE10B75F352B89B76E60820160FF10AD8* L_9 = V_0;
-		VirtualActionInvoker0::Invoke(18 /* System.Void System.IO.Stream::Close() */, L_9);
+		VirtualActionInvoker0::Invoke(19 /* System.Void System.IO.Stream::Close() */, L_9);
 		// }
 		return;
 	}
@@ -15431,7 +15431,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR GameData_t857DCFA51343FE2611A88BE4D943BDA16FB
 		L_8 = BinaryFormatter_Deserialize_mFC50E75F230189EB3660C8F2FD1E786C0D11E1ED(L_4, L_7, NULL);
 		// stream.Close();
 		FileStream_t07C7222EE10B75F352B89B76E60820160FF10AD8* L_9 = V_1;
-		VirtualActionInvoker0::Invoke(18 /* System.Void System.IO.Stream::Close() */, L_9);
+		VirtualActionInvoker0::Invoke(19 /* System.Void System.IO.Stream::Close() */, L_9);
 		// return data;
 		return ((GameData_t857DCFA51343FE2611A88BE4D943BDA16FBCE8B6*)IsInstClass((RuntimeObject*)L_8, GameData_t857DCFA51343FE2611A88BE4D943BDA16FBCE8B6_il2cpp_TypeInfo_var));
 	}

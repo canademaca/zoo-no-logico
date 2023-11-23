@@ -6,9 +6,12 @@ using UnityEngine.SceneManagement;
 public class ChangeScene : MonoBehaviour {
 
     [SerializeField] private GameObject ANALYTICS;
+    public AudioSource sound;
+    public AudioClip Sonidoboton;
     void Start()
-    { 
+    {
         ANALYTICS = GameObject.FindGameObjectWithTag("ANALYTICS");
+
     }
 
 
@@ -39,5 +42,11 @@ public class ChangeScene : MonoBehaviour {
         ANALYTICS.SendMessage(accion);
     }
 
-    
+    public void SoundButton()
+    {
+        sound.clip = Sonidoboton;
+        sound.enabled = false;
+        sound.enabled = true;
+        DontDestroyOnLoad(this);
+    }
 }
