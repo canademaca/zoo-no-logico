@@ -7,6 +7,11 @@ using UnityEngine.UI;
 
 public class StasisManager : MonoBehaviour
 {
+    public int Monedas;
+    public GameObject PopUp;
+    bool Negative = false;
+
+
     public TextAsset Cruzas;
     public Text descripcion;
     public Text dato1;
@@ -92,7 +97,22 @@ public class StasisManager : MonoBehaviour
         if(plata.text == "0"){
             PlayerPrefs.SetInt("plataCurrentCruza", 0);
         }
+
+        for (int i = 0; i < GameObject.FindGameObjectsWithTag("TextoMonedas").Length; i++)
+        {
+            GameObject.FindGameObjectsWithTag("TextoMonedas")[i].GetComponent<Text>().text = Monedas.ToString();
+        }
+
+        Monedas = PlayerPrefs.GetInt("Moneditas");
+
+        if (Monedas < 0 && Negative == false)
+        {
+            PopUp.SetActive(true);
+            print("funciona");
+            Negative = true;
+        }
     }
+
 
     void GetCruza (int index)
     {

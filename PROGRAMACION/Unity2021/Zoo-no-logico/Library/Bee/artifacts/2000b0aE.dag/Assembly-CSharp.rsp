@@ -361,6 +361,7 @@
 "Assets/Items & Inventory/Scripts/SlotDeCruza.cs"
 "Assets/Items & Inventory/Scripts/VM_AgarrarSoltar.cs"
 "Assets/LogroScreen.cs"
+"Assets/PopUpStasis.cs"
 "Assets/Scripts/AbrirCartas.cs"
 "Assets/Scripts/AgarrarSoltar.cs"
 "Assets/Scripts/Analytics/EventosAnalytics.cs"
