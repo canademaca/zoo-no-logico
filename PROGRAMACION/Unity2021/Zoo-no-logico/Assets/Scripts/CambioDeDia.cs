@@ -5,9 +5,11 @@ using UnityEngine.UI;
 
 public class CambioDeDia : MonoBehaviour {
 
+    public int Monedas;
+    public GameObject notif;
+    bool Negative = false;
 
     public Text textoTurno;
-    public int Monedas;
     public int numTurno;
     public GameObject Pantalla;
     public GameObject PantallaPostEvento;
@@ -22,6 +24,7 @@ public class CambioDeDia : MonoBehaviour {
     public GameObject aveDesbloqueada;
     public GameObject serpienteDesbloqueada;
 
+
     public float speed = 10.0f;
 
 
@@ -31,6 +34,7 @@ public class CambioDeDia : MonoBehaviour {
     void Start() {
         textoTurno = GameObject.FindGameObjectWithTag("TextoDias").GetComponent<Text>();
         ANALYTICS = GameObject.FindGameObjectWithTag("ANALYTICS");
+
     }
 
     // Update is called once per frame
@@ -70,10 +74,13 @@ public class CambioDeDia : MonoBehaviour {
         }
         Monedas = PlayerPrefs.GetInt("Moneditas");
 
-        if (Monedas < 0)
+        if (Monedas < 0 && Negative == false)
         {
-            print("PUTO");
+            notif.SetActive(true);
+            print("funciona");
+            Negative = true;
         }
+
 
         PlayerPrefs.SetString("Slot1", "");
         PlayerPrefs.SetString("Slot2", "");
