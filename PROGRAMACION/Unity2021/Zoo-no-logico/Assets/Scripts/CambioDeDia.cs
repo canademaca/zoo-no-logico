@@ -7,6 +7,7 @@ public class CambioDeDia : MonoBehaviour {
 
 
     public Text textoTurno;
+    public int Monedas;
     public int numTurno;
     public GameObject Pantalla;
     public GameObject PantallaPostEvento;
@@ -61,6 +62,17 @@ public class CambioDeDia : MonoBehaviour {
             PlayerPrefs.SetInt("CantidadSerpiente", PlayerPrefs.GetInt("CantidadSerpiente") + 1);
             //DestruirObjeto(serpienteDesbloqueada);
             StartCoroutine(DestruirObjeto(serpienteDesbloqueada));
+        }
+
+        for (int i = 0; i < GameObject.FindGameObjectsWithTag("TextoMonedas").Length; i++)
+        {
+            GameObject.FindGameObjectsWithTag("TextoMonedas")[i].GetComponent<Text>().text = Monedas.ToString();
+        }
+        Monedas = PlayerPrefs.GetInt("Moneditas");
+
+        if (Monedas < 0)
+        {
+            print("PUTO");
         }
 
         PlayerPrefs.SetString("Slot1", "");
