@@ -60,6 +60,10 @@ TagManager:
   - LogroTitle
   - LogroIcon
   - LogroDesc
+  - Plataformas
+  - Vida1
+  - Vida2
+  - Vida3
   layers:
   - Default
   - TransparentFX

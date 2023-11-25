@@ -473,6 +473,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   notificacion: {fileID: 651731588}
   notificacion2: {fileID: 0}
+  DineroNeg: 1
   ANALYTICS: {fileID: 0}
 --- !u!114 &80595234
 MonoBehaviour:
@@ -601,7 +602,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1723330357}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -740,6 +741,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   notificacion: {fileID: 0}
   notificacion2: {fileID: 0}
+  DineroNeg: 1
   ANALYTICS: {fileID: 0}
 --- !u!1 &115112219
 GameObject:
@@ -1392,7 +1394,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Monedas: 0
-  notif: {fileID: 0}
+  notif: {fileID: 651731588}
   DineroNeg: 0
   textoTurno: {fileID: 0}
   numTurno: 0
@@ -2081,7 +2083,7 @@ RectTransform:
   m_Children:
   - {fileID: 1612295616}
   m_Father: {fileID: 1723330357}
-  m_RootOrder: 25
+  m_RootOrder: 26
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -2967,7 +2969,7 @@ RectTransform:
   - {fileID: 1690571080}
   - {fileID: 652801904}
   m_Father: {fileID: 1723330357}
-  m_RootOrder: 14
+  m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -3888,7 +3890,7 @@ RectTransform:
   m_Children:
   - {fileID: 369814113}
   m_Father: {fileID: 1723330357}
-  m_RootOrder: 26
+  m_RootOrder: 27
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -4128,7 +4130,7 @@ RectTransform:
   m_Children:
   - {fileID: 908357201}
   m_Father: {fileID: 1723330357}
-  m_RootOrder: 27
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -4456,7 +4458,7 @@ RectTransform:
   m_Children:
   - {fileID: 1064331002}
   m_Father: {fileID: 1723330357}
-  m_RootOrder: 17
+  m_RootOrder: 18
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -4880,6 +4882,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   notificacion: {fileID: 651731588}
   notificacion2: {fileID: 0}
+  DineroNeg: 1
   ANALYTICS: {fileID: 0}
 --- !u!1 &688691294
 GameObject:
@@ -4963,7 +4966,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1723330357}
-  m_RootOrder: 9
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &690658824
 GameObject:
@@ -5373,7 +5376,7 @@ Transform:
   - {fileID: 157524753}
   - {fileID: 1804896795}
   m_Father: {fileID: 1723330357}
-  m_RootOrder: 15
+  m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &797886082
 GameObject:
@@ -5641,7 +5644,7 @@ RectTransform:
   m_Children:
   - {fileID: 234519222}
   m_Father: {fileID: 1723330357}
-  m_RootOrder: 13
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -5768,7 +5771,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Monedas: 0
-  notif: {fileID: 651731588}
+  notif: {fileID: 0}
   DineroNeg: 0
   textoTurno: {fileID: 218527431}
   numTurno: 0
@@ -5891,7 +5894,7 @@ RectTransform:
   m_Children:
   - {fileID: 218527430}
   m_Father: {fileID: 1723330357}
-  m_RootOrder: 12
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -6014,7 +6017,7 @@ RectTransform:
   m_Children:
   - {fileID: 988794744}
   m_Father: {fileID: 1723330357}
-  m_RootOrder: 21
+  m_RootOrder: 22
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -6361,6 +6364,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   notificacion: {fileID: 0}
   notificacion2: {fileID: 0}
+  DineroNeg: 1
   ANALYTICS: {fileID: 0}
 --- !u!114 &968904795
 MonoBehaviour:
@@ -7092,6 +7096,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   notificacion: {fileID: 0}
   notificacion2: {fileID: 0}
+  DineroNeg: 1
   ANALYTICS: {fileID: 0}
 --- !u!114 &1064331004
 MonoBehaviour:
@@ -7231,7 +7236,7 @@ RectTransform:
   m_Children:
   - {fileID: 378471008}
   m_Father: {fileID: 1723330357}
-  m_RootOrder: 10
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -7404,7 +7409,7 @@ RectTransform:
   m_Children:
   - {fileID: 2065444173}
   m_Father: {fileID: 1723330357}
-  m_RootOrder: 23
+  m_RootOrder: 24
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -8011,7 +8016,7 @@ RectTransform:
   - {fileID: 130106736}
   - {fileID: 1266311510}
   m_Father: {fileID: 1723330357}
-  m_RootOrder: 19
+  m_RootOrder: 20
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -8106,7 +8111,7 @@ RectTransform:
   m_Children:
   - {fileID: 1967972231}
   m_Father: {fileID: 1723330357}
-  m_RootOrder: 22
+  m_RootOrder: 23
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -8565,7 +8570,7 @@ RectTransform:
   m_Children:
   - {fileID: 1025648933}
   m_Father: {fileID: 1723330357}
-  m_RootOrder: 20
+  m_RootOrder: 21
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -8718,7 +8723,7 @@ RectTransform:
   - {fileID: 16082615}
   - {fileID: 1789728115}
   m_Father: {fileID: 1723330357}
-  m_RootOrder: 16
+  m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -8926,7 +8931,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1723330357}
-  m_RootOrder: 8
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -8947,6 +8952,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   notificacion: {fileID: 0}
   notificacion2: {fileID: 0}
+  DineroNeg: 1
   ANALYTICS: {fileID: 0}
 --- !u!114 &1411704581
 MonoBehaviour:
@@ -9900,7 +9906,7 @@ RectTransform:
   m_Children:
   - {fileID: 300381273}
   m_Father: {fileID: 1723330357}
-  m_RootOrder: 24
+  m_RootOrder: 25
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -10193,6 +10199,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   notificacion: {fileID: 0}
   notificacion2: {fileID: 0}
+  DineroNeg: 1
   ANALYTICS: {fileID: 0}
 --- !u!114 &1675872949
 MonoBehaviour:
@@ -10771,7 +10778,6 @@ GameObject:
   - component: {fileID: 1723330355}
   - component: {fileID: 1723330354}
   - component: {fileID: 1723330358}
-  - component: {fileID: 1723330360}
   - component: {fileID: 1723330359}
   m_Layer: 5
   m_Name: Canvas
@@ -10860,6 +10866,7 @@ RectTransform:
   - {fileID: 1849446190}
   - {fileID: 80595232}
   - {fileID: 681547259}
+  - {fileID: 651731589}
   - {fileID: 84299275}
   - {fileID: 1411704579}
   - {fileID: 688691296}
@@ -10880,7 +10887,6 @@ RectTransform:
   - {fileID: 1636039635}
   - {fileID: 274793517}
   - {fileID: 639129032}
-  - {fileID: 651731589}
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -10913,18 +10919,6 @@ MonoBehaviour:
   m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: cc35d9b9066076441acf74f70327c39d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &1723330360
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1723330353}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 92d4ca61bf86d314896afb56ff393b3b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &1747486269
@@ -11340,6 +11334,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   notificacion: {fileID: 0}
   notificacion2: {fileID: 0}
+  DineroNeg: 1
   ANALYTICS: {fileID: 0}
 --- !u!114 &1789728117
 MonoBehaviour:
@@ -11733,7 +11728,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1723330357}
-  m_RootOrder: 18
+  m_RootOrder: 19
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -11888,6 +11883,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   notificacion: {fileID: 0}
   notificacion2: {fileID: 0}
+  DineroNeg: 1
   ANALYTICS: {fileID: 0}
 --- !u!1 &1842176360
 GameObject:
@@ -12016,6 +12012,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   notificacion: {fileID: 0}
   notificacion2: {fileID: 0}
+  DineroNeg: 1
   ANALYTICS: {fileID: 0}
 --- !u!114 &1849446192
 MonoBehaviour:
@@ -12952,7 +12949,7 @@ RectTransform:
   m_Children:
   - {fileID: 232791965}
   m_Father: {fileID: 1723330357}
-  m_RootOrder: 11
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}

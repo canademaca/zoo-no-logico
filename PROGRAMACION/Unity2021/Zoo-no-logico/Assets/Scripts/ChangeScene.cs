@@ -8,6 +8,8 @@ public class ChangeScene : MonoBehaviour {
 
     public GameObject notificacion;
     public GameObject notificacion2;
+    public int DineroNeg = 1;
+
     [SerializeField] private GameObject ANALYTICS;
     void Start()
     { 
@@ -44,8 +46,11 @@ public class ChangeScene : MonoBehaviour {
 
     public void eliminar()
     {
-        notificacion.SetActive(false);
-        notificacion2.SetActive(false);
+        if (DineroNeg == 1)
+        {
+            notificacion.SetActive(false);
+            notificacion2.SetActive(false);
+        }
     }
 
     

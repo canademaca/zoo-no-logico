@@ -7,7 +7,6 @@ public class CambioDeDia : MonoBehaviour {
 
     public int Monedas;
     public GameObject notif;
-    bool Negative = false;
     public int DineroNeg = 0;
 
     public Text textoTurno;
@@ -35,6 +34,7 @@ public class CambioDeDia : MonoBehaviour {
     void Start() {
         textoTurno = GameObject.FindGameObjectWithTag("TextoDias").GetComponent<Text>();
         ANALYTICS = GameObject.FindGameObjectWithTag("ANALYTICS");
+
 
     }
 
@@ -75,11 +75,20 @@ public class CambioDeDia : MonoBehaviour {
         }
         Monedas = PlayerPrefs.GetInt("Moneditas");
 
+        NotificacionStasis();
+
+        PlayerPrefs.SetString("Slot1", "");
+        PlayerPrefs.SetString("Slot2", "");
+        PlayerPrefs.SetString("Slot3", "");
+    }
+
+
+    public void NotificacionStasis()
+    {
         if (Monedas < 0 && DineroNeg == 0)
         {
             notif.SetActive(true);
-
-            DineroNeg = PlayerPrefs.GetInt("CambioDeDia");
+           //DineroNeg = PlayerPrefs.GetInt("CambioDeDia", 1);
 
         }
 
@@ -88,13 +97,7 @@ public class CambioDeDia : MonoBehaviour {
             notif.SetActive(false);
 
         }
-
-
-        PlayerPrefs.SetString("Slot1", "");
-        PlayerPrefs.SetString("Slot2", "");
-        PlayerPrefs.SetString("Slot3", "");
     }
-
 
     public void Pasar()
     {

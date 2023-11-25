@@ -9,6 +9,7 @@ public class BotonAceptar : MonoBehaviour
     public GameObject PopUp;
     public GameObject Cerrar;
     public bool cartel = false;
+    public static int Accept = 0;
 
     // Start is called before the first frame update
     void Start()
@@ -23,15 +24,14 @@ public class BotonAceptar : MonoBehaviour
 
     public void Press()
     {
-        if(cartel == false)
+        if(cartel == false && Accept == 0)
         {
             BotonAccept.SetActive(false);
             PopUp.SetActive(false);
             cartel = true;
             Cerrar.SetActive(true);
+            Accept = Accept++;
 
         }
-
-        cartel = true;
     }
 }

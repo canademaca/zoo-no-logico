@@ -154,7 +154,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 416183333}
-  m_RootOrder: 8
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &16866644
 SpriteRenderer:
@@ -1171,8 +1171,8 @@ RectTransform:
   - {fileID: 390443428}
   - {fileID: 677459238}
   - {fileID: 1968137474}
-  - {fileID: 342911375}
   - {fileID: 16866643}
+  - {fileID: 342911375}
   - {fileID: 268347918}
   - {fileID: 2077643605}
   - {fileID: 1890573223}
@@ -1426,6 +1426,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   notificacion: {fileID: 1892386418}
   notificacion2: {fileID: 1368983783}
+  DineroNeg: 1
   ANALYTICS: {fileID: 0}
 --- !u!114 &642968872
 MonoBehaviour:
@@ -2222,7 +2223,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1368983784
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2776,7 +2777,7 @@ PrefabInstance:
     - target: {fileID: 224634674530137706, guid: 40c99e3272af02243a05f735e635cb9c,
         type: 3}
       propertyPath: m_RootOrder
-      value: 7
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 224634674530137706, guid: 40c99e3272af02243a05f735e635cb9c,
         type: 3}
@@ -3158,6 +3159,7 @@ MonoBehaviour:
   PopUp: {fileID: 1892386418}
   Cerrar: {fileID: 642968869}
   cartel: 0
+  Accept: 0
 --- !u!1 &1862066614
 GameObject:
   m_ObjectHideFlags: 0
@@ -3378,7 +3380,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1892386419
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3602,6 +3604,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   notificacion: {fileID: 0}
   notificacion2: {fileID: 0}
+  DineroNeg: 1
   ANALYTICS: {fileID: 0}
 --- !u!114 &1918701530
 MonoBehaviour:
@@ -4257,6 +4260,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   notificacion: {fileID: 0}
   notificacion2: {fileID: 0}
+  DineroNeg: 1
   ANALYTICS: {fileID: 0}
 --- !u!114 &2080581601
 MonoBehaviour:
