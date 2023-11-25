@@ -393,6 +393,7 @@
 "Assets/Scripts/EventoCartas.cs"
 "Assets/Scripts/Eventos/evento.cs"
 "Assets/Scripts/Eventos/Eventos.cs"
+"Assets/Scripts/EventoStasis.cs"
 "Assets/Scripts/ImageForJaulaCruza.cs"
 "Assets/Scripts/Jaula.cs"
 "Assets/Scripts/JaulaManager.cs"
