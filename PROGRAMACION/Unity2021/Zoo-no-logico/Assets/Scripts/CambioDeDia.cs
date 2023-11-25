@@ -8,7 +8,7 @@ public class CambioDeDia : MonoBehaviour {
     public int Monedas;
     public GameObject notif;
     bool Negative = false;
-    bool Contrast = false;
+    public int DineroNeg = 0;
 
     public Text textoTurno;
     public int numTurno;
@@ -75,17 +75,18 @@ public class CambioDeDia : MonoBehaviour {
         }
         Monedas = PlayerPrefs.GetInt("Moneditas");
 
-        if (Monedas < 0 && Negative == false && Contrast ==false)
+        if (Monedas < 0 && DineroNeg == 0)
         {
             notif.SetActive(true);
 
-            if(Negative == false)
-            {
-                Negative = true;
-                
-            }
+            DineroNeg = PlayerPrefs.GetInt("CambioDeDia");
 
-            Contrast = true;
+        }
+
+        else
+        {
+            notif.SetActive(false);
+
         }
 
 

@@ -1393,6 +1393,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Monedas: 0
   notif: {fileID: 0}
+  DineroNeg: 0
   textoTurno: {fileID: 0}
   numTurno: 0
   Pantalla: {fileID: 457022996}
@@ -5768,6 +5769,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Monedas: 0
   notif: {fileID: 651731588}
+  DineroNeg: 0
   textoTurno: {fileID: 218527431}
   numTurno: 0
   Pantalla: {fileID: 1296787175}
@@ -10769,6 +10771,7 @@ GameObject:
   - component: {fileID: 1723330355}
   - component: {fileID: 1723330354}
   - component: {fileID: 1723330358}
+  - component: {fileID: 1723330360}
   - component: {fileID: 1723330359}
   m_Layer: 5
   m_Name: Canvas
@@ -10910,6 +10913,18 @@ MonoBehaviour:
   m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: cc35d9b9066076441acf74f70327c39d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1723330360
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1723330353}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 92d4ca61bf86d314896afb56ff393b3b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &1747486269
@@ -13436,6 +13451,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Monedas: 0
   notif: {fileID: 0}
+  DineroNeg: 0
   textoTurno: {fileID: 0}
   numTurno: 0
   Pantalla: {fileID: 1296787175}
