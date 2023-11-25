@@ -9,6 +9,8 @@ public class StasisManager : MonoBehaviour
 {
     public int Monedas;
     public GameObject PopUp;
+    public GameObject PopUp2;
+    public GameObject Cerrar;
     bool Negative = false;
 
 
@@ -108,8 +110,10 @@ public class StasisManager : MonoBehaviour
         if (Monedas < 0 && Negative == false)
         {
             PopUp.SetActive(true);
+            PopUp2.SetActive(true);
             print("funciona");
             Negative = true;
+            Cerrar.SetActive(false);
         }
     }
 

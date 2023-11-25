@@ -5,6 +5,9 @@ using UnityEngine.SceneManagement;
 
 public class ChangeScene : MonoBehaviour {
 
+
+    public GameObject notificacion;
+    public GameObject notificacion2;
     [SerializeField] private GameObject ANALYTICS;
     void Start()
     { 
@@ -37,6 +40,12 @@ public class ChangeScene : MonoBehaviour {
     public void ejecutarAccionAnalytics(string accion)
     {
         ANALYTICS.SendMessage(accion);
+    }
+
+    public void eliminar()
+    {
+        notificacion.SetActive(false);
+        notificacion2.SetActive(false);
     }
 
     

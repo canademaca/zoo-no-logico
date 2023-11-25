@@ -471,6 +471,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6cc4e04c7e122e243862dca6dfb9179d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  notificacion: {fileID: 651731588}
+  notificacion2: {fileID: 0}
   ANALYTICS: {fileID: 0}
 --- !u!114 &80595234
 MonoBehaviour:
@@ -736,6 +738,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6cc4e04c7e122e243862dca6dfb9179d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  notificacion: {fileID: 0}
+  notificacion2: {fileID: 0}
   ANALYTICS: {fileID: 0}
 --- !u!1 &115112219
 GameObject:
@@ -1776,7 +1780,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1700042939
-  m_SortingLayer: 1
+  m_SortingLayer: 2
   m_SortingOrder: 2
   m_Sprite: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -2665,7 +2669,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1700042939
-  m_SortingLayer: 1
+  m_SortingLayer: 2
   m_SortingOrder: 1
   m_Sprite: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -4108,7 +4112,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &651731589
 RectTransform:
   m_ObjectHideFlags: 0
@@ -4811,6 +4815,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 681547263}
+        m_TargetAssemblyTypeName: ChangeScene, Assembly-CSharp
+        m_MethodName: eliminar
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &681547261
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4861,6 +4877,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6cc4e04c7e122e243862dca6dfb9179d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  notificacion: {fileID: 651731588}
+  notificacion2: {fileID: 0}
   ANALYTICS: {fileID: 0}
 --- !u!1 &688691294
 GameObject:
@@ -5668,7 +5686,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1700042939
-  m_SortingLayer: 1
+  m_SortingLayer: 2
   m_SortingOrder: 0
   m_Sprite: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -5810,18 +5828,6 @@ MonoBehaviour:
       - m_Target: {fileID: 905196904}
         m_TargetAssemblyTypeName: 
         m_MethodName: AbrirPantalla
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: AddMoney
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -6351,6 +6357,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6cc4e04c7e122e243862dca6dfb9179d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  notificacion: {fileID: 0}
+  notificacion2: {fileID: 0}
   ANALYTICS: {fileID: 0}
 --- !u!114 &968904795
 MonoBehaviour:
@@ -7080,6 +7088,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6cc4e04c7e122e243862dca6dfb9179d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  notificacion: {fileID: 0}
+  notificacion2: {fileID: 0}
   ANALYTICS: {fileID: 0}
 --- !u!114 &1064331004
 MonoBehaviour:
@@ -7732,7 +7742,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1700042939
-  m_SortingLayer: 1
+  m_SortingLayer: 2
   m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: 9d626ea14d903a94a8218c0ebee14723, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -8933,6 +8943,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6cc4e04c7e122e243862dca6dfb9179d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  notificacion: {fileID: 0}
+  notificacion2: {fileID: 0}
   ANALYTICS: {fileID: 0}
 --- !u!114 &1411704581
 MonoBehaviour:
@@ -10177,6 +10189,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6cc4e04c7e122e243862dca6dfb9179d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  notificacion: {fileID: 0}
+  notificacion2: {fileID: 0}
   ANALYTICS: {fileID: 0}
 --- !u!114 &1675872949
 MonoBehaviour:
@@ -10955,7 +10969,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1700042939
-  m_SortingLayer: 1
+  m_SortingLayer: 2
   m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: c0e5267729852b5419901fc91f6a7985, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -11309,6 +11323,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6cc4e04c7e122e243862dca6dfb9179d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  notificacion: {fileID: 0}
+  notificacion2: {fileID: 0}
   ANALYTICS: {fileID: 0}
 --- !u!114 &1789728117
 MonoBehaviour:
@@ -11855,6 +11871,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6cc4e04c7e122e243862dca6dfb9179d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  notificacion: {fileID: 0}
+  notificacion2: {fileID: 0}
   ANALYTICS: {fileID: 0}
 --- !u!1 &1842176360
 GameObject:
@@ -11981,6 +11999,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6cc4e04c7e122e243862dca6dfb9179d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  notificacion: {fileID: 0}
+  notificacion2: {fileID: 0}
   ANALYTICS: {fileID: 0}
 --- !u!114 &1849446192
 MonoBehaviour:
@@ -12607,7 +12627,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1700042939
-  m_SortingLayer: 1
+  m_SortingLayer: 2
   m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: d7a9beca341d868488daf33a6363841c, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
