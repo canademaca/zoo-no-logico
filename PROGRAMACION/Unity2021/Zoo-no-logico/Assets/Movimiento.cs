@@ -7,7 +7,7 @@ using UnityEngine.SceneManagement;
 public class Movimiento : MonoBehaviour
 {
 
-    private float velocidad = 3.2f;
+    private float velocidad = 3.9f;
     private float salto = 12;
     private bool PuedeSaltar;
     private bool PuedeAgachar;
