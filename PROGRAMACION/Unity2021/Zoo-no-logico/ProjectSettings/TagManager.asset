@@ -67,6 +67,11 @@ TagManager:
   - AnimalCapturado
   - Collectable
   - Enemigo
+  - Collectable01
+  - Collectable02
+  - Collectable03
+  - Collectable04
+  - Collectable05
   layers:
   - Default
   - TransparentFX

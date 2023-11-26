@@ -15,6 +15,16 @@ public class Movimiento : MonoBehaviour
     private int vidas;
     private bool isFacingRight = false;
 
+    int Monedas = 0;
+
+    public GameObject Collectable01;
+    public GameObject Collectable02;
+    public GameObject Collectable03;
+    public GameObject Collectable04;
+    public GameObject Collectable05;
+    public GameObject Animal;
+    public GameObject Ganaste;
+
 
 
     public enum GameState { Vivo, Muerto, Revivir }
@@ -84,6 +94,7 @@ public class Movimiento : MonoBehaviour
                 spritepl.flipX = false;
                 animpl.SetBool("Idle", false);
                 animpl.SetBool("Correr", true);
+                animpl.SetBool("Muerte", false);
 
             }
 
@@ -99,6 +110,7 @@ public class Movimiento : MonoBehaviour
                 spritepl.flipX = true;
                 animpl.SetBool("Idle", false);
                 animpl.SetBool("Correr", true);
+                animpl.SetBool("Muerte", false);
 
             }
 
@@ -112,6 +124,7 @@ public class Movimiento : MonoBehaviour
                 rb2d.velocity = new Vector2(rb2d.velocity.x, salto);
                 PuedeSaltar = false;
                 animpl.SetBool("Salto", true);
+                animpl.SetBool("Muerte", false);
             }
 
             else
@@ -126,6 +139,7 @@ public class Movimiento : MonoBehaviour
             {
                 animpl.SetBool("Crouch", true);
                 Collider.size = CrouchingHeight;
+                animpl.SetBool("Muerte", false);
             }
 
             if (Input.GetKeyUp(KeyCode.S))
@@ -152,9 +166,23 @@ public class Movimiento : MonoBehaviour
 
     void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.tag == "Plataformas" || estado == GameState.Vivo)
+        if (collision.gameObject.tag == "Plataformas")
         {
             PuedeSaltar = true;
+            animpl.SetBool("Muerte", false);
+        }
+
+        if (collision.gameObject.tag == "Collectable01")
+        {
+            Monedas++;
+            Destroy(Collectable01);
+        }
+
+        if(collision.gameObject.tag == "AnimalCapturado")
+        {
+            Destroy(Animal);
+            Ganaste.SetActive(true);
+            estado = GameState.Muerto;
         }
 
     }
@@ -171,9 +199,9 @@ public class Movimiento : MonoBehaviour
     {
         if (collision.gameObject.tag == "Enemigo")
         {
-
             animpl.SetBool("Muerte", true);
-            animpl.SetBool("Idle", false);
+            muerteanim();
+            animpl.SetBool("Idle", true);
         }
 
         else
@@ -181,6 +209,15 @@ public class Movimiento : MonoBehaviour
             animpl.SetBool("Muerte", false);
         }
     }
+
+    private IEnumerator muerteanim()
+    {
+        animpl.SetBool("Muerte", true);
+        yield return new WaitForSeconds(0.2f);
+        animpl.SetBool("Muerte", false);
+
+    }
+
 
 
 

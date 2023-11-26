@@ -368,6 +368,8 @@
 "Assets/Items & Inventory/Scripts/VM_AgarrarSoltar.cs"
 "Assets/LogroScreen.cs"
 "Assets/Movimiento.cs"
+"Assets/PopUpRecompensa.cs"
+"Assets/RecompensaMiniGame.cs"
 "Assets/Scripts/AbrirCartas.cs"
 "Assets/Scripts/AgarrarSoltar.cs"
 "Assets/Scripts/Analytics/EventosAnalytics.cs"

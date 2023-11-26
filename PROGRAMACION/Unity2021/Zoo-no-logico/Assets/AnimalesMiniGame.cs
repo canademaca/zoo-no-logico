@@ -5,7 +5,7 @@ using UnityEngine;
 public class AnimalesMiniGame : MonoBehaviour
 {
 
-    float velocidad = 3.5f;
+    float velocidad = 2.5f;
     public Rigidbody2D rbd2;
     bool Izquierda = true;
     public Transform Apoint;
