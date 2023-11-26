@@ -72,6 +72,8 @@ TagManager:
   - Collectable03
   - Collectable04
   - Collectable05
+  - Caida
+  - earnedMoney
   layers:
   - Default
   - TransparentFX

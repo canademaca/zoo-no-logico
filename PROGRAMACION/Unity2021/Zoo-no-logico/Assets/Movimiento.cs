@@ -8,7 +8,7 @@ public class Movimiento : MonoBehaviour
 {
 
     private float velocidad = 3.9f;
-    private float salto = 12;
+    private float salto = 15; 
     private bool PuedeSaltar;
     private bool PuedeAgachar;
     private float horizontal;
@@ -24,6 +24,7 @@ public class Movimiento : MonoBehaviour
     public GameObject Collectable05;
     public GameObject Animal;
     public GameObject Ganaste;
+    public GameObject Perdiste;
 
 
 
@@ -172,16 +173,13 @@ public class Movimiento : MonoBehaviour
             animpl.SetBool("Muerte", false);
         }
 
-        if (collision.gameObject.tag == "Collectable01")
-        {
-            Monedas++;
-            Destroy(Collectable01);
-        }
+        
 
-        if(collision.gameObject.tag == "AnimalCapturado")
+        
+        if(collision.gameObject.tag == "Caida")
         {
             Destroy(Animal);
-            Ganaste.SetActive(true);
+            Perdiste.SetActive(true);
             estado = GameState.Muerto;
         }
 
@@ -200,13 +198,44 @@ public class Movimiento : MonoBehaviour
         if (collision.gameObject.tag == "Enemigo")
         {
             animpl.SetBool("Muerte", true);
-            muerteanim();
+            //muerteanim();
             animpl.SetBool("Idle", true);
         }
 
         else
         {
             animpl.SetBool("Muerte", false);
+        }
+        if(collision.gameObject.tag == "AnimalCapturado")
+        {
+            Destroy(Animal);
+            Ganaste.SetActive(true);
+            estado = GameState.Muerto;
+        }
+        if (collision.gameObject.tag == "Collectable01")
+        {
+            Monedas++;
+            Destroy(Collectable01);
+        }
+        if (collision.gameObject.tag == "Collectable02")
+        {
+            Monedas++;
+            Destroy(Collectable02);
+        }
+        if (collision.gameObject.tag == "Collectable03")
+        {
+            Monedas++;
+            Destroy(Collectable03);
+        }
+        if (collision.gameObject.tag == "Collectable04")
+        {
+            Monedas++;
+            Destroy(Collectable04);
+        }
+        if (collision.gameObject.tag == "Collectable05")
+        {
+            Monedas++;
+            Destroy(Collectable05);
         }
     }
 

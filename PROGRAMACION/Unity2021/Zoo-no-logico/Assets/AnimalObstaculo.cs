@@ -16,8 +16,7 @@ public class AnimalObstaculo : MonoBehaviour
     void Start()
     {
         rbd2 = GetComponent<Rigidbody2D>();
-        GameObject Animal = GameObject.FindGameObjectWithTag("AnimalCapturado");
-        Physics2D.IgnoreCollision(Animal.GetComponent<Collider2D>(), GetComponent<Collider2D>());
+        
     }
 
     // Update is called once per frame

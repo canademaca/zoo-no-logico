@@ -1,10 +1,11 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class RecompensaMiniGame : MonoBehaviour
 {
-
+    public Text earnedMoney;
     public GameObject Collectable01;
     public GameObject Collectable02;
     public GameObject Collectable03;
@@ -16,13 +17,15 @@ public class RecompensaMiniGame : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        earnedMoney = GameObject.FindGameObjectWithTag("earnedMoney").GetComponent<Text>();
+
         Recompensa();
     }
 
     // Update is called once per frame
     void Update()
     {
-
+        earnedMoney.text = Monedas.ToString("");
     }
 
 
