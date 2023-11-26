@@ -16,10 +16,6 @@ public class Movimiento : MonoBehaviour
     private bool isFacingRight = false;
 
 
-    public GameObject vida1;
-    public GameObject vida2;
-    public GameObject vida3;
-
 
     public enum GameState { Vivo, Muerto, Revivir }
 
@@ -38,8 +34,6 @@ public class Movimiento : MonoBehaviour
 
     [SerializeField] Rigidbody2D rb2d;
     SpriteRenderer spritepl;
-    //public Sprite Standing;
-    //public Sprite Crouding;
     public BoxCollider2D Collider;
     public Vector2 StandingHeight;
     public Vector2 CrouchingHeight;
@@ -58,7 +52,7 @@ public class Movimiento : MonoBehaviour
         animpl.SetBool("Idle", false);
         animpl.SetBool("Correr", false);
         animpl.SetBool("Salto", false);
-        //animpl.SetBool("Muerte", false);
+        animpl.SetBool("Muerte", false);
         animpl.SetBool("Crouch", false);
     }
 
@@ -90,6 +84,7 @@ public class Movimiento : MonoBehaviour
                 spritepl.flipX = false;
                 animpl.SetBool("Idle", false);
                 animpl.SetBool("Correr", true);
+
             }
 
             else
@@ -171,6 +166,22 @@ public class Movimiento : MonoBehaviour
             PuedeSaltar = false;
         }
     }
+
+    void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.tag == "Enemigo")
+        {
+
+            animpl.SetBool("Muerte", true);
+            animpl.SetBool("Idle", false);
+        }
+
+        else
+        {
+            animpl.SetBool("Muerte", false);
+        }
+    }
+
 
 
 

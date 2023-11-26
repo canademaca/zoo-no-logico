@@ -345,6 +345,7 @@
 -r:"Library/Bee/artifacts/2000b0aE.dag/UnityEngine.UI.ref.dll"
 -r:"Library/Bee/artifacts/2000b0aE.dag/UnityEngine.XR.LegacyInputHelpers.ref.dll"
 "Assets/AnimalesMiniGame.cs"
+"Assets/AnimalObstaculo.cs"
 "Assets/CameraFollow.cs"
 "Assets/FondoTest.cs"
 "Assets/Items & Inventory/Scripts/CantidadCupos.cs"

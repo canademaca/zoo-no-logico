@@ -64,6 +64,9 @@ TagManager:
   - Vida1
   - Vida2
   - Vida3
+  - AnimalCapturado
+  - Collectable
+  - Enemigo
   layers:
   - Default
   - TransparentFX
