@@ -10,6 +10,7 @@ public class ChangeScene : MonoBehaviour {
     public GameObject notificacion2;
     public int DineroNeg = 1;
 
+
     [SerializeField] private GameObject ANALYTICS;
     void Start()
     { 
@@ -52,6 +53,19 @@ public class ChangeScene : MonoBehaviour {
             notificacion2.SetActive(false);
         }
     }
+
+    public void Minijuego(int SceneID)
+    {
+        print("pija " + PlayerPrefs.GetInt("Minigame"));
+
+        if(PlayerPrefs.GetInt("Minigame") == 0)
+        {
+            SceneManager.LoadScene(SceneID);
+            PlayerPrefs.SetInt("Minigame", 1);
+        }
+
+    }
+    
 
     
 }

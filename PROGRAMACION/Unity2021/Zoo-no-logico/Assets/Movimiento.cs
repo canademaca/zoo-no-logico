@@ -12,6 +12,7 @@ public class Movimiento : MonoBehaviour
     private bool PuedeSaltar;
     private bool PuedeAgachar;
     private float horizontal;
+    private float vertical;
     private int vidas;
     private bool isFacingRight = false;
 
@@ -73,6 +74,7 @@ public class Movimiento : MonoBehaviour
         if (estado == GameState.Vivo)
         {
             horizontal = Input.GetAxisRaw("Horizontal");
+            vertical = Input.GetAxisRaw("Vertical");
 
             if (horizontal != 0)
             {
@@ -86,6 +88,17 @@ public class Movimiento : MonoBehaviour
                 float veloFinal = velciudad * Time.deltaTime * horizontal;
                 ciudad.uvRect = new Rect(ciudad.uvRect.x + veloFinal, 0f, 1f, 1f);
 
+            }
+
+            if(horizontal != 0 && vertical == 0)
+            {
+                animpl.SetBool("Correr", true);
+            }
+
+            else
+            {
+                animpl.SetBool("Correr", false);
+                animpl.SetBool("Idle", true);
 
             }
 
@@ -94,15 +107,11 @@ public class Movimiento : MonoBehaviour
                 rb2d.velocity = new Vector2(velocidad, rb2d.velocity.y);
                 spritepl.flipX = false;
                 animpl.SetBool("Idle", false);
-                animpl.SetBool("Correr", true);
                 animpl.SetBool("Muerte", false);
 
             }
 
-            else
-            {
-                animpl.SetBool("Correr", false);
-            }
+           
 
 
             if (Input.GetKey("a"))
@@ -110,29 +119,30 @@ public class Movimiento : MonoBehaviour
                 rb2d.velocity = new Vector2(-velocidad, rb2d.velocity.y);
                 spritepl.flipX = true;
                 animpl.SetBool("Idle", false);
-                animpl.SetBool("Correr", true);
                 animpl.SetBool("Muerte", false);
 
             }
 
-            else
-            {
-                animpl.SetBool("Correr", false);
-            }
+
 
             if (Input.GetKey("w") && PuedeSaltar)
             {
                 rb2d.velocity = new Vector2(rb2d.velocity.x, salto);
                 PuedeSaltar = false;
-                animpl.SetBool("Salto", true);
                 animpl.SetBool("Muerte", false);
+            }
+
+
+
+            if (vertical != 0)
+            {
+                animpl.SetBool("Salto", true);
             }
 
             else
             {
 
                 animpl.SetBool("Salto", false);
-
 
             }
 

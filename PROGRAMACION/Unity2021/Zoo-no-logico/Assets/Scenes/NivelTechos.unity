@@ -3189,12 +3189,17 @@ PrefabInstance:
     - target: {fileID: 3022571237972373875, guid: 12d5d5420987b824fb2460d815c4adc1,
         type: 3}
       propertyPath: m_LocalScale.x
-      value: 1.98
+      value: 1.831302
       objectReference: {fileID: 0}
     - target: {fileID: 3022571237972373875, guid: 12d5d5420987b824fb2460d815c4adc1,
         type: 3}
       propertyPath: m_LocalScale.y
-      value: 2.21
+      value: 1.664317
+      objectReference: {fileID: 0}
+    - target: {fileID: 3022571237972373875, guid: 12d5d5420987b824fb2460d815c4adc1,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.9249
       objectReference: {fileID: 0}
     - target: {fileID: 3022571237972373875, guid: 12d5d5420987b824fb2460d815c4adc1,
         type: 3}
@@ -3204,7 +3209,7 @@ PrefabInstance:
     - target: {fileID: 3022571237972373875, guid: 12d5d5420987b824fb2460d815c4adc1,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.33
+      value: 1.4351
       objectReference: {fileID: 0}
     - target: {fileID: 3022571237972373875, guid: 12d5d5420987b824fb2460d815c4adc1,
         type: 3}
@@ -3250,6 +3255,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: mesa1 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3022571237972373878, guid: 12d5d5420987b824fb2460d815c4adc1,
+        type: 3}
+      propertyPath: m_TagString
+      value: Plataformas
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 12d5d5420987b824fb2460d815c4adc1, type: 3}
@@ -4831,6 +4841,7 @@ MonoBehaviour:
   notificacion: {fileID: 0}
   notificacion2: {fileID: 0}
   DineroNeg: 1
+  Minigame: 0
   ANALYTICS: {fileID: 0}
 --- !u!114 &1589625458
 MonoBehaviour:
@@ -6272,7 +6283,7 @@ PrefabInstance:
     - target: {fileID: 315372966081402404, guid: 35cb1949af0e6a84f8409cc10e902993,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 6.8
+      value: 6.23
       objectReference: {fileID: 0}
     - target: {fileID: 315372966081402407, guid: 35cb1949af0e6a84f8409cc10e902993,
         type: 3}
@@ -6728,6 +6739,7 @@ MonoBehaviour:
   notificacion: {fileID: 0}
   notificacion2: {fileID: 0}
   DineroNeg: 1
+  Minigame: 0
   ANALYTICS: {fileID: 0}
 --- !u!1 &2145122138 stripped
 GameObject:

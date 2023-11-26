@@ -56,6 +56,8 @@ public class RecompensaMiniGame : MonoBehaviour
             Monedas = Monedas + 750;
         }
 
+        PlayerPrefs.SetInt("Moneditas", PlayerPrefs.GetInt("Moneditas") + Monedas);
+
     }
 
 }
