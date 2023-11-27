@@ -75,9 +75,12 @@ EditorBuildSettings:
     path: Assets/Scenes/TutorialMiniGame05.unity
     guid: 26f751f0e4b03ca4e9211408ab0224e9
   - enabled: 1
-    path: Assets/Scenes/NivelTechos.unity
+    path: Assets/Scenes/NivelCiudad.unity
     guid: 6415455e24d3e9446b6c61a9617d3fbb
   - enabled: 1
     path: Assets/Scenes/NivelSewer.unity
     guid: 1b1b6855cafd9844b8b557de922005e4
+  - enabled: 1
+    path: Assets/Scenes/NivelTechos.unity
+    guid: 41989c95bc701164ca0fcdcf95fd775b
   m_configObjects: {}

@@ -45,6 +45,11 @@ public class ChangeScene : MonoBehaviour {
         ANALYTICS.SendMessage(accion);
     }
 
+    public void NotifOff()
+    {
+        PlayerPrefs.SetInt("DineroNeg", 1);
+    }
+
     public void eliminar()
     {
         if (DineroNeg == 1)
@@ -56,7 +61,7 @@ public class ChangeScene : MonoBehaviour {
 
     public void Minijuego(int SceneID)
     {
-        print("pija " + PlayerPrefs.GetInt("Minigame"));
+        print(PlayerPrefs.GetInt("Minigame"));
 
         if(PlayerPrefs.GetInt("Minigame") == 0)
         {
