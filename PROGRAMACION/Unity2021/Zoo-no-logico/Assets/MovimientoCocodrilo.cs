@@ -8,7 +8,7 @@ public class MovimientoCocodrilo : MonoBehaviour
 {
 
     private float velocidad = 3.9f;
-    private float salto = 9;
+    private float salto = 10;
     private bool PuedeSaltar;
     private bool PuedeAgachar;
     private float horizontal;
