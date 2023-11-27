@@ -29,7 +29,6 @@
 -define:PLATFORM_ARCH_64
 -define:UNITY_64
 -define:UNITY_INCLUDE_TESTS
--define:UNITY_ANALYTICS
 -define:USE_SEARCH_ENGINE_API
 -define:USE_SEARCH_TABLE
 -define:USE_SEARCH_MODULE
@@ -325,10 +324,10 @@
 -r:"C:/Program Files/Unity 2021.3.13f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Xml.XPath.XDocument.dll"
 -r:"C:/Program Files/Unity 2021.3.13f1/Editor/Data/NetStandard/Extensions/2.0.0/System.Runtime.InteropServices.WindowsRuntime.dll"
 -r:"C:/Program Files/Unity 2021.3.13f1/Editor/Data/NetStandard/ref/2.1.0/netstandard.dll"
--r:"C:/Users/Zanty.DESKTOP-O0QB1PV/Documents/GitHub/zoo-no-logico-SVT/PROGRAMACION/Unity2021/Zoo-no-logico/Library/PackageCache/com.unity.analytics@3.6.12/AnalyticsStandardEvents/Unity.Analytics.StandardEvents.dll"
--r:"C:/Users/Zanty.DESKTOP-O0QB1PV/Documents/GitHub/zoo-no-logico-SVT/PROGRAMACION/Unity2021/Zoo-no-logico/Library/PackageCache/com.unity.analytics@3.6.12/Unity.Analytics.Editor.dll"
--r:"C:/Users/Zanty.DESKTOP-O0QB1PV/Documents/GitHub/zoo-no-logico-SVT/PROGRAMACION/Unity2021/Zoo-no-logico/Library/PackageCache/com.unity.analytics@3.6.12/Unity.Analytics.Tracker.dll"
--r:"C:/Users/Zanty.DESKTOP-O0QB1PV/Documents/GitHub/zoo-no-logico-SVT/PROGRAMACION/Unity2021/Zoo-no-logico/Library/PackageCache/com.unity.nuget.newtonsoft-json@3.0.2/Runtime/Newtonsoft.Json.dll"
+-r:"C:/Users/Ailu/Pictures/Juego/zoo-no-logico-SS/PROGRAMACION/Unity2021/Zoo-no-logico/Library/PackageCache/com.unity.analytics@3.6.12/AnalyticsStandardEvents/Unity.Analytics.StandardEvents.dll"
+-r:"C:/Users/Ailu/Pictures/Juego/zoo-no-logico-SS/PROGRAMACION/Unity2021/Zoo-no-logico/Library/PackageCache/com.unity.analytics@3.6.12/Unity.Analytics.Editor.dll"
+-r:"C:/Users/Ailu/Pictures/Juego/zoo-no-logico-SS/PROGRAMACION/Unity2021/Zoo-no-logico/Library/PackageCache/com.unity.analytics@3.6.12/Unity.Analytics.Tracker.dll"
+-r:"C:/Users/Ailu/Pictures/Juego/zoo-no-logico-SS/PROGRAMACION/Unity2021/Zoo-no-logico/Library/PackageCache/com.unity.nuget.newtonsoft-json@3.2.1/Runtime/Newtonsoft.Json.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/Analytics.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/Purchasing.Common.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/Unity.2D.Sprite.Editor.ref.dll"
@@ -380,7 +379,7 @@
 "Assets/Items & Inventory/Scripts/Mati_CruzasAnimales.cs"
 "Assets/Items & Inventory/Scripts/SlotDeCruza.cs"
 "Assets/Items & Inventory/Scripts/VM_AgarrarSoltar.cs"
-"Assets/ModoLibre.cs"
+"Assets/LogroScreen.cs"
 "Assets/Scripts/AbrirCartas.cs"
 "Assets/Scripts/AgarrarSoltar.cs"
 "Assets/Scripts/Analytics/EventosAnalytics.cs"
@@ -416,6 +415,9 @@
 "Assets/Scripts/Jaula.cs"
 "Assets/Scripts/JaulaManager.cs"
 "Assets/Scripts/JsonReader.cs"
+"Assets/Scripts/LogroBtnTrigger.cs"
+"Assets/Scripts/Logros.cs"
+"Assets/Scripts/ModoLibre.cs"
 "Assets/Scripts/MonedasTotales.cs"
 "Assets/Scripts/MoneySetter.cs"
 "Assets/Scripts/NewDayMoney.cs"
@@ -428,6 +430,7 @@
 "Assets/Scripts/popularityTest.cs"
 "Assets/Scripts/RandomPercent.cs"
 "Assets/Scripts/RawImageTexture.cs"
+"Assets/Scripts/ResetSave.cs"
 "Assets/Scripts/save-load/GameData.cs"
 "Assets/Scripts/save-load/SaveManager.cs"
 "Assets/Scripts/save-load/SaveSystem.cs"
@@ -437,11 +440,11 @@
 "Assets/Scripts/StasisManager.cs"
 "Assets/Scripts/swipe_inventory.cs"
 "Assets/Scripts/Test.cs"
+"Assets/Scripts/TiendaSlot.cs"
 "Assets/Scripts/TogglePerder2.cs"
 "Assets/Scripts/TogglePerdida.cs"
 "Assets/Scripts/UIZoomImage.cs"
 "Assets/Scripts/UnlockStoreAnimals.cs"
-"Assets/TiendaSlot.cs"
 -langversion:9.0
 
 /deterministic
