@@ -139,6 +139,11 @@ public class MovimientoCocodrilo : MonoBehaviour
                 animpl.SetBool("Crouch", true);
                 Collider.size = CrouchingHeight;
                 animpl.SetBool("Muerte", false);
+
+                if (vertical < 0)
+                {
+                    animpl.SetBool("Salto", false);
+                }
             }
 
             if (Input.GetKeyUp(KeyCode.S))

@@ -8,7 +8,7 @@ public class MovimientoCiudad : MonoBehaviour
 {
 
     private float velocidad = 3.9f;
-    private float salto = 10; 
+    private float salto = 11; 
     private bool PuedeSaltar;
     private bool PuedeAgachar;
     private float horizontal;
@@ -149,6 +149,11 @@ public class MovimientoCiudad : MonoBehaviour
                 animpl.SetBool("Crouch", true);
                 Collider.size = CrouchingHeight;
                 animpl.SetBool("Muerte", false);
+
+                if (vertical < 0)
+                {
+                    animpl.SetBool("Salto", false);
+                }
             }
 
             if (Input.GetKeyUp(KeyCode.S))

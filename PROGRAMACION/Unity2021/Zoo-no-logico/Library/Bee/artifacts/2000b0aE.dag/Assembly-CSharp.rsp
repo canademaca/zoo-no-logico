@@ -370,6 +370,7 @@
 "Assets/Items & Inventory/Scripts/VM_AgarrarSoltar.cs"
 "Assets/LogroScreen.cs"
 "Assets/Movimiento.cs"
+"Assets/MovimientoCampo.cs"
 "Assets/MovimientoCiudad.cs"
 "Assets/MovimientoCocodrilo.cs"
 "Assets/PopUpRecompensa.cs"
