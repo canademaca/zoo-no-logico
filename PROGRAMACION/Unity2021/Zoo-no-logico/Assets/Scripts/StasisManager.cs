@@ -107,17 +107,25 @@ public class StasisManager : MonoBehaviour
 
         Monedas = PlayerPrefs.GetInt("Moneditas");
 
-        if (Monedas < 0 && Negative == false)
+        PopUpOn();
+    }
+
+
+    void PopUpOn()
+    {
+        print(PlayerPrefs.GetInt("PopUpStasis"));
+
+        if (Monedas < 0 && PlayerPrefs.GetInt("PopUpStasis") == 0)
         {
             PopUp.SetActive(true);
             PopUp2.SetActive(true);
             print("funciona");
-            Negative = true;
             Cerrar.SetActive(false);
+            PlayerPrefs.SetInt("PopUpStasis", 1);
         }
     }
 
-
+    
     void GetCruza (int index)
     {
         if (PlayerPrefs.GetString("Stasis" + index) != "" && StasisActivas[index] == 1)

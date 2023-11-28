@@ -7,13 +7,14 @@ using UnityEngine.SceneManagement;
 public class MovimientoCampo : MonoBehaviour
 {
 
-    private float velocidad = 3.9f;
+    private float velocidad = 3.8f;
     private float salto = 12;
     private bool PuedeSaltar;
     private bool PuedeAgachar;
     private float horizontal;
     private float vertical;
     private bool isFacingRight = false;
+   
 
     int Monedas = 0;
 
@@ -41,7 +42,7 @@ public class MovimientoCampo : MonoBehaviour
 
 
     [SerializeField] Rigidbody2D rb2d;
-    SpriteRenderer spritepl;
+    public SpriteRenderer spritepl;
     public BoxCollider2D Collider;
     public Vector2 StandingHeight;
     public Vector2 CrouchingHeight;
@@ -161,11 +162,7 @@ public class MovimientoCampo : MonoBehaviour
 
         if (estado == GameState.Dead)
         {
-            animpl.SetBool("Idle", false);
-            animpl.SetBool("Correr", false);
-            animpl.SetBool("Salto", false);
-            animpl.SetBool("Muerte", false);
-            animpl.SetBool("Crouch", false);
+            Destroy(spritepl);
 
         }
     }

@@ -422,6 +422,16 @@ public class EventosAnalytics : MonoBehaviour
             {"logro28", PlayerPrefs.GetInt("Logro28")},
         }); //TERMINADO
     }
+
+    public void minigame()
+    {
+        AnalyticsService.Instance.CustomData("minigame", new Dictionary<string, object>(){
+            {"vez", PlayerPrefs.GetInt("MinigameVez")},
+
+        }); //TERMINADO
+
+        Debug.Log("vez" + PlayerPrefs.GetInt("MinigameVez"));
+    }
 }
 
 

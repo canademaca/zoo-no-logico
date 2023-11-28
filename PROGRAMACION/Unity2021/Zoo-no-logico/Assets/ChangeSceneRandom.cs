@@ -11,7 +11,7 @@ public class ChangeSceneRandom : MonoBehaviour
 
     void Start()
     {
-
+        ANALYTICS = GameObject.FindGameObjectWithTag("ANALYTICS");
     }
 
 
@@ -21,5 +21,9 @@ public class ChangeSceneRandom : MonoBehaviour
         SceneManager.LoadScene(random, LoadSceneMode.Single);
     }
 
+    public void SumarContinuarParaAnalytics(string playerPref)
+    {
+        PlayerPrefs.SetInt(playerPref, PlayerPrefs.GetInt(playerPref) + 1);
+    }
 
 }

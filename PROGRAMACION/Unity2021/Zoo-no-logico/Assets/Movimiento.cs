@@ -13,7 +13,6 @@ public class Movimiento : MonoBehaviour
     private bool PuedeAgachar;
     private float horizontal;
     private float vertical;
-    private int vidas;
     private bool isFacingRight = false;
 
     int Monedas = 0;
@@ -59,7 +58,6 @@ public class Movimiento : MonoBehaviour
         StandingHeight = Collider.size;
 
         estado = GameState.Vivo;
-        vidas = 3;
 
         animpl.SetBool("Idle", false);
         animpl.SetBool("Correr", false);

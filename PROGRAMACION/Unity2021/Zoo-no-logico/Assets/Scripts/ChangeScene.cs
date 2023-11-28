@@ -7,8 +7,7 @@ public class ChangeScene : MonoBehaviour {
 
 
     public GameObject notificacion;
-    public GameObject notificacion2;
-    public int DineroNeg = 1;
+    //public int DineroNeg = 1;
 
 
     [SerializeField] private GameObject ANALYTICS;
@@ -47,17 +46,10 @@ public class ChangeScene : MonoBehaviour {
 
     public void NotifOff()
     {
-        PlayerPrefs.SetInt("DineroNeg", 1);
+        notificacion.SetActive(false);
     }
 
-    public void eliminar()
-    {
-        if (DineroNeg == 1)
-        {
-            notificacion.SetActive(false);
-            notificacion2.SetActive(false);
-        }
-    }
+
 
     public void Minijuego(int SceneID)
     {

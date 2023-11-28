@@ -7,6 +7,7 @@ public class ColisionBat : MonoBehaviour
     public Rigidbody2D rbd2;
     public GameObject Perdiste;
     public GameObject Animal;
+    public SpriteRenderer anim;
 
     void Start()
     {
@@ -22,7 +23,7 @@ public class ColisionBat : MonoBehaviour
         {
             Destroy(Animal);
             Perdiste.SetActive(true);
-            print("asfasdf");
+            Destroy(anim);
         }
     }
 }

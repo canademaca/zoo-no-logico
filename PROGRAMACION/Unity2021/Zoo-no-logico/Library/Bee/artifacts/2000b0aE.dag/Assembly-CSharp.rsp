@@ -373,6 +373,7 @@
 "Assets/MovimientoCampo.cs"
 "Assets/MovimientoCiudad.cs"
 "Assets/MovimientoCocodrilo.cs"
+"Assets/PajaroMiniGame.cs"
 "Assets/PopUpRecompensa.cs"
 "Assets/RecompensaMiniGame.cs"
 "Assets/Scripts/AbrirCartas.cs"
@@ -442,6 +443,7 @@
 "Assets/Scripts/TogglePerdida.cs"
 "Assets/Scripts/UIZoomImage.cs"
 "Assets/Scripts/UnlockStoreAnimals.cs"
+"Assets/SnakeMiniGame.cs"
 "Assets/TestFondo.cs"
 -langversion:9.0
 

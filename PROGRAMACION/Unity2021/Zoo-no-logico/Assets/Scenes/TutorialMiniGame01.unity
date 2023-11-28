@@ -516,7 +516,6 @@ MonoBehaviour:
   notificacion: {fileID: 0}
   notificacion2: {fileID: 0}
   DineroNeg: 1
-  Minigame: 0
   ANALYTICS: {fileID: 0}
 --- !u!114 &2142528387
 MonoBehaviour:
@@ -569,7 +568,7 @@ MonoBehaviour:
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 19
+          m_IntArgument: 26
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0

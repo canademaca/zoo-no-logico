@@ -164,6 +164,11 @@ public class MovimientoCiudad : MonoBehaviour
 
 
         }
+
+        if(estado == GameState.Muerto)
+        {
+            Destroy(spritepl);
+        }
         }
 
     private void FlipSp()
