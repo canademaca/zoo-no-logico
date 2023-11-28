@@ -660,8 +660,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -1700042939
+  m_SortingLayer: 2
   m_SortingOrder: 9
   m_Sprite: {fileID: -1811579566, guid: 72f83ca0d306fa449a75ade2e5dedf9d, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -1361,8 +1361,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -1700042939
+  m_SortingLayer: 2
   m_SortingOrder: 6
   m_Sprite: {fileID: 21300000, guid: ec2acc46dbf4b9545b79e7af6b308590, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -2204,7 +2204,6 @@ GameObject:
   - component: {fileID: 1161486902}
   - component: {fileID: 1161486901}
   - component: {fileID: 1161486900}
-  - component: {fileID: 1161486903}
   - component: {fileID: 1161486904}
   - component: {fileID: 1161486905}
   m_Layer: 0
@@ -2308,18 +2307,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1161486903
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1161486899}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ab46b36adeb72c9498b1f15adabb9249, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1161486904
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2334,7 +2321,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rbd2: {fileID: 1161486905}
   Perdiste: {fileID: 1266901384}
-  Animal: {fileID: 1499133995}
+  Animal: {fileID: 1952101841}
   player: {fileID: 0}
   player1: {fileID: 0}
   player2: {fileID: 0}
@@ -2750,7 +2737,7 @@ Canvas:
   m_SortingBucketNormalizedSize: 0
   m_AdditionalShaderChannelsFlag: 0
   m_SortingLayerID: -1700042939
-  m_SortingOrder: 8
+  m_SortingOrder: 14
   m_TargetDisplay: 0
 --- !u!224 &1266901388
 RectTransform:
@@ -3668,7 +3655,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1499133995}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.6408293, y: -1.9538444, z: -0.045670282}
+  m_LocalPosition: {x: 6.61, y: -1.9538444, z: -0.045670282}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -5106,6 +5093,7 @@ MonoBehaviour:
   Perdiste: {fileID: 1266901384}
   Animal: {fileID: 1499133995}
   Collider: {fileID: 1952101844}
+  player3: {fileID: 1982035562}
 --- !u!61 &1952101844
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -5435,7 +5423,7 @@ MonoBehaviour:
   velocidadfondo: 0.05
   nubes: {fileID: 1687524970}
   velnubes: 0.08
-  estado: 0
+  estado: 1
   animpl: {fileID: 1982035561}
   rb2d: {fileID: 1982035558}
   spritepl: {fileID: 1982035559}

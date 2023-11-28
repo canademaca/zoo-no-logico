@@ -16,7 +16,7 @@ public class SnakeMiniGame : MonoBehaviour
     public GameObject Animal;
     public BoxCollider2D Collider;
 
-
+    [SerializeField] public MovimientoCampo player3;
 
 
     // Start is called before the first frame update
@@ -33,6 +33,16 @@ public class SnakeMiniGame : MonoBehaviour
             rbd2.velocity = new Vector2(velocidad, rbd2.velocity.y);
         }
 
+    }
+
+    void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.tag == "Caida")
+        {
+            Destroy(Animal);
+            Perdiste.SetActive(true);
+            player3.estado = MovimientoCampo.GameState.Muerto;
+        }
     }
 }
 

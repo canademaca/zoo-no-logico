@@ -5336,6 +5336,7 @@ MonoBehaviour:
   Perdiste: {fileID: 1266901384}
   Animal: {fileID: 1499133995}
   Collider: {fileID: 1952101844}
+  player3: {fileID: 1982035562}
 --- !u!1 &1976244809
 GameObject:
   m_ObjectHideFlags: 0

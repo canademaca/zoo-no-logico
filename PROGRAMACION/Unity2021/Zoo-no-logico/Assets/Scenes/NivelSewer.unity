@@ -3665,7 +3665,6 @@ GameObject:
   - component: {fileID: 1161486902}
   - component: {fileID: 1161486901}
   - component: {fileID: 1161486900}
-  - component: {fileID: 1161486903}
   - component: {fileID: 1161486904}
   - component: {fileID: 1161486905}
   m_Layer: 0
@@ -3769,18 +3768,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1161486903
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1161486899}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ab46b36adeb72c9498b1f15adabb9249, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1161486904
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3796,8 +3783,10 @@ MonoBehaviour:
   rbd2: {fileID: 1161486905}
   Perdiste: {fileID: 1266901384}
   Animal: {fileID: 2145122138}
-  anim: {fileID: 0}
   player: {fileID: 1982035562}
+  player1: {fileID: 0}
+  player2: {fileID: 0}
+  player3: {fileID: 0}
 --- !u!50 &1161486905
 Rigidbody2D:
   serializedVersion: 4
@@ -7764,7 +7753,7 @@ PrefabInstance:
     - target: {fileID: 315372966970289364, guid: 35cb1949af0e6a84f8409cc10e902993,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 2.95
+      value: 10.9
       objectReference: {fileID: 0}
     - target: {fileID: 315372966970289364, guid: 35cb1949af0e6a84f8409cc10e902993,
         type: 3}
