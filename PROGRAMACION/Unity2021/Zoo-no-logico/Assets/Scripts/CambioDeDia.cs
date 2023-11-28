@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class CambioDeDia : MonoBehaviour {
 
@@ -122,15 +123,17 @@ public class CambioDeDia : MonoBehaviour {
 
         if (Popularidad >= 100 && PlayerPrefs.GetInt("Ganaste")==0)
         {
-            PantallaGanar.SetActive(true);
             PlayerPrefs.SetInt("Ganaste", 1);
             PlayerPrefs.SetInt("ActivadorCalificacion", 1);
             ANALYTICS.SendMessage("ganar");
+            PlayerPrefs.SetString("Cinematica", "GOOD_END");
+            SceneManager.LoadScene(17);
         }
         else if (Popularidad <= 0 && PlayerPrefs.GetInt("Ganaste") == 0)
         {
-            PantallaPerder.SetActive(true);
             ANALYTICS.SendMessage("game_over");
+            PlayerPrefs.SetString("Cinematica", "BAD_END");
+            SceneManager.LoadScene(17);
         }
         else 
         {

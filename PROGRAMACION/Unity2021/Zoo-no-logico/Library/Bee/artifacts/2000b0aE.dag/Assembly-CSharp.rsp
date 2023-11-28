@@ -27,6 +27,7 @@
 -define:UNITY_2021_2_OR_NEWER
 -define:UNITY_2021_3_OR_NEWER
 -define:UNITY_INCLUDE_TESTS
+-define:UNITY_ANALYTICS
 -define:USE_SEARCH_ENGINE_API
 -define:USE_SEARCH_TABLE
 -define:USE_SEARCH_MODULE
@@ -374,6 +375,7 @@
 "Assets/Scripts/ChangeScene.cs"
 "Assets/Scripts/CheatCodes.cs"
 "Assets/Scripts/CheckCuposCruza.cs"
+"Assets/Scripts/Cinematica.cs"
 "Assets/Scripts/CloseWindow.cs"
 "Assets/Scripts/CloseWindow1.cs"
 "Assets/Scripts/CodexCruzas.cs"
@@ -411,6 +413,7 @@
 "Assets/Scripts/RandomPercent.cs"
 "Assets/Scripts/RawImageTexture.cs"
 "Assets/Scripts/ResetSave.cs"
+"Assets/Scripts/SaltearCinematica.cs"
 "Assets/Scripts/save-load/GameData.cs"
 "Assets/Scripts/save-load/SaveManager.cs"
 "Assets/Scripts/save-load/SaveSystem.cs"
