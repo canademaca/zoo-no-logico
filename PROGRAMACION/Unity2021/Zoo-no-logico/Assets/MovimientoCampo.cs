@@ -29,7 +29,7 @@ public class MovimientoCampo : MonoBehaviour
 
 
 
-    public enum GameState { Vivo, Dead, Revivir }
+    public enum GameState { Vivo, Muerto, Revivir, Daño }
 
     public RawImage fondo;
     public float velocidadfondo;
@@ -100,7 +100,6 @@ public class MovimientoCampo : MonoBehaviour
                 rb2d.velocity = new Vector2(velocidad, rb2d.velocity.y);
                 spritepl.flipX = false;
                 animpl.SetBool("Idle", false);
-                animpl.SetBool("Muerte", false);
 
             }
 
@@ -112,7 +111,7 @@ public class MovimientoCampo : MonoBehaviour
                 rb2d.velocity = new Vector2(-velocidad, rb2d.velocity.y);
                 spritepl.flipX = true;
                 animpl.SetBool("Idle", false);
-                animpl.SetBool("Muerte", false);
+
 
             }
 
@@ -122,12 +121,11 @@ public class MovimientoCampo : MonoBehaviour
             {
                 rb2d.velocity = new Vector2(rb2d.velocity.x, salto);
                 PuedeSaltar = false;
-                animpl.SetBool("Muerte", false);
             }
 
 
 
-            if (vertical != 0)
+            if (vertical != 0 && animpl.GetBool("Crouch") == false)
             {
                 animpl.SetBool("Salto", true);
             }
@@ -143,7 +141,6 @@ public class MovimientoCampo : MonoBehaviour
             {
                 animpl.SetBool("Crouch", true);
                 Collider.size = CrouchingHeight;
-                animpl.SetBool("Muerte", false);
 
                 if (vertical < 0)
                 {
@@ -160,11 +157,24 @@ public class MovimientoCampo : MonoBehaviour
 
         }
 
-        if (estado == GameState.Dead)
+        if (estado == GameState.Muerto)
         {
             Destroy(spritepl);
 
         }
+        
+    }
+
+    void MuerteTrue()
+    {
+        estado = GameState.Daño;
+    }
+
+    void MuerteFalse()
+    {
+
+        animpl.SetBool("Muerte", false);
+        estado = GameState.Vivo;
     }
 
     private void FlipSp()
@@ -194,7 +204,7 @@ public class MovimientoCampo : MonoBehaviour
         {
             Destroy(Animal);
             Perdiste.SetActive(true);
-            estado = GameState.Dead;
+            estado = GameState.Muerto;
         }
 
     }
@@ -207,13 +217,14 @@ public class MovimientoCampo : MonoBehaviour
         }
     }
 
+
     void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.tag == "Enemigo")
         {
-            animpl.SetBool("Muerte", true);
+            animpl.SetBool("Muerte", true);            
             //muerteanim();
-            animpl.SetBool("Idle", true);
+
         }
 
         else
@@ -224,7 +235,7 @@ public class MovimientoCampo : MonoBehaviour
         {
             Destroy(Animal);
             Ganaste.SetActive(true);
-            estado = GameState.Dead;
+            estado = GameState.Muerto;
         }
         if (collision.gameObject.tag == "Collectable01")
         {

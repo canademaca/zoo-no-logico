@@ -44,24 +44,7 @@ public class ChangeScene : MonoBehaviour {
         ANALYTICS.SendMessage(accion);
     }
 
-    public void NotifOff()
-    {
-        notificacion.SetActive(false);
-    }
 
-
-
-    public void Minijuego(int SceneID)
-    {
-        print(PlayerPrefs.GetInt("Minigame"));
-
-        if(PlayerPrefs.GetInt("Minigame") == 0)
-        {
-            SceneManager.LoadScene(SceneID);
-            PlayerPrefs.SetInt("Minigame", 1);
-        }
-
-    }
     
 
     

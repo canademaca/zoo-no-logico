@@ -355,8 +355,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   notificacion: {fileID: 0}
-  notificacion2: {fileID: 0}
-  DineroNeg: 1
   ANALYTICS: {fileID: 0}
 --- !u!114 &120171229
 MonoBehaviour:
@@ -546,18 +544,6 @@ MonoBehaviour:
           m_IntArgument: 18
           m_FloatArgument: 0
           m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 255193057}
-        m_TargetAssemblyTypeName: ChangeSceneRandom, Assembly-CSharp
-        m_MethodName: SumarContinuarParaAnalytics
-        m_Mode: 5
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: MinigameVez
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &255193055

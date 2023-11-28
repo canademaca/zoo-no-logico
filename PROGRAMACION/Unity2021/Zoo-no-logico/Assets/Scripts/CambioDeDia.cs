@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class CambioDeDia : MonoBehaviour {
 
@@ -74,8 +75,6 @@ public class CambioDeDia : MonoBehaviour {
         }
         Monedas = PlayerPrefs.GetInt("Moneditas");
 
-        NotificacionStasis();
-
         PlayerPrefs.SetString("Slot1", "");
         PlayerPrefs.SetString("Slot2", "");
         PlayerPrefs.SetString("Slot3", "");
@@ -92,15 +91,33 @@ public class CambioDeDia : MonoBehaviour {
             notif.SetActive(true);
         }
 
-
+    
 
     }
 
+    public void DesactivarNoti()
+    {
+        notif.SetActive(false);
+    }
 
 
+    public void Minijuego(int SceneID)
+    {
+        print(PlayerPrefs.GetInt("Minigame"));
+
+        if (PlayerPrefs.GetInt("Minigame") == 0)
+        {
+            SceneManager.LoadScene(SceneID);
+            PlayerPrefs.SetInt("Minigame", 1);
+        }
+
+    }
 
     public void Pasar()
     {
+
+        Minijuego(17);
+
         if (!PantallaPostEvento)
         {
             numTurno++;

@@ -1391,7 +1391,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Monedas: 0
-  notif: {fileID: 0}
+  notif: {fileID: 651731588}
   textoTurno: {fileID: 0}
   numTurno: 0
   Pantalla: {fileID: 457022996}
@@ -1449,18 +1449,6 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 208765380}
-        m_TargetAssemblyTypeName: ChangeScene, Assembly-CSharp
-        m_MethodName: Minijuego
-        m_Mode: 3
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 17
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
       - m_Target: {fileID: 208765376}
         m_TargetAssemblyTypeName: 
         m_MethodName: Pasar
@@ -4733,6 +4721,7 @@ GameObject:
   - component: {fileID: 681547261}
   - component: {fileID: 681547260}
   - component: {fileID: 681547263}
+  - component: {fileID: 681547264}
   m_Layer: 5
   m_Name: Stasis
   m_TagString: Untagged
@@ -4840,21 +4829,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 681547263}
-        m_TargetAssemblyTypeName: ChangeScene, Assembly-CSharp
-        m_MethodName: eliminar
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 681547263}
-        m_TargetAssemblyTypeName: ChangeScene, Assembly-CSharp
-        m_MethodName: NotifOff
+      - m_Target: {fileID: 681547264}
+        m_TargetAssemblyTypeName: CambioDeDia, Assembly-CSharp
+        m_MethodName: DesactivarNoti
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -4915,6 +4892,33 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   notificacion: {fileID: 651731588}
+  ANALYTICS: {fileID: 0}
+--- !u!114 &681547264
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 681547258}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a7cd69ee9afccea4eb40ee8854c62de0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Monedas: 0
+  notif: {fileID: 651731588}
+  textoTurno: {fileID: 0}
+  numTurno: 0
+  Pantalla: {fileID: 0}
+  PantallaPostEvento: {fileID: 0}
+  PantallaPerder: {fileID: 0}
+  PantallaGanar: {fileID: 0}
+  Popularidad: 0
+  PopularidadBarra: {fileID: 0}
+  aranaDesbloqueada: {fileID: 0}
+  aveDesbloqueada: {fileID: 0}
+  serpienteDesbloqueada: {fileID: 0}
+  speed: 10
   ANALYTICS: {fileID: 0}
 --- !u!1 &688691294
 GameObject:
@@ -10802,6 +10806,7 @@ GameObject:
   - component: {fileID: 1723330354}
   - component: {fileID: 1723330358}
   - component: {fileID: 1723330359}
+  - component: {fileID: 1723330360}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -10944,6 +10949,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cc35d9b9066076441acf74f70327c39d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1723330360
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1723330353}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 475501651ccc6e04f9d5f58ba7a70b3c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Monedas: 0
+  notif: {fileID: 651731588}
 --- !u!1 &1747486269
 GameObject:
   m_ObjectHideFlags: 0

@@ -8,7 +8,7 @@ public class Movimiento : MonoBehaviour
 {
 
     private float velocidad = 3.9f;
-    private float salto = 15; 
+    private float salto = 13; 
     private bool PuedeSaltar;
     private bool PuedeAgachar;
     private float horizontal;
@@ -28,7 +28,7 @@ public class Movimiento : MonoBehaviour
 
 
 
-    public enum GameState { Vivo, Muerto, Revivir }
+    public enum GameState { Vivo, Muerto, Revivir, Daño }
 
     public RawImage fondo;
     public float velocidadfondo;
@@ -105,7 +105,6 @@ public class Movimiento : MonoBehaviour
                 rb2d.velocity = new Vector2(velocidad, rb2d.velocity.y);
                 spritepl.flipX = false;
                 animpl.SetBool("Idle", false);
-                animpl.SetBool("Muerte", false);
 
             }
 
@@ -117,7 +116,6 @@ public class Movimiento : MonoBehaviour
                 rb2d.velocity = new Vector2(-velocidad, rb2d.velocity.y);
                 spritepl.flipX = true;
                 animpl.SetBool("Idle", false);
-                animpl.SetBool("Muerte", false);
 
             }
 
@@ -127,12 +125,11 @@ public class Movimiento : MonoBehaviour
             {
                 rb2d.velocity = new Vector2(rb2d.velocity.x, salto);
                 PuedeSaltar = false;
-                animpl.SetBool("Muerte", false);
             }
 
 
 
-            if (vertical != 0)
+            if (vertical != 0 && animpl.GetBool("Crouch") == false)
             {
                 animpl.SetBool("Salto", true);
             }
@@ -148,7 +145,6 @@ public class Movimiento : MonoBehaviour
             {
                 animpl.SetBool("Crouch", true);
                 Collider.size = CrouchingHeight;
-                animpl.SetBool("Muerte", false);
 
                 if (vertical < 0)
                 {
@@ -165,6 +161,18 @@ public class Movimiento : MonoBehaviour
 
         }
         }
+
+    void MuerteTrue()
+    {
+        estado = GameState.Daño;
+    }
+
+    void MuerteFalse()
+    {
+
+        animpl.SetBool("Muerte", false);
+        estado = GameState.Vivo;
+    }
 
     private void FlipSp()
     {
@@ -211,14 +219,10 @@ public class Movimiento : MonoBehaviour
         if (collision.gameObject.tag == "Enemigo")
         {
             animpl.SetBool("Muerte", true);
-            //muerteanim();
-            animpl.SetBool("Idle", true);
+
         }
 
-        else
-        {
-            animpl.SetBool("Muerte", false);
-        }
+
         if(collision.gameObject.tag == "AnimalCapturado")
         {
             Destroy(Animal);
@@ -252,6 +256,7 @@ public class Movimiento : MonoBehaviour
         }
     }
 
+
     private IEnumerator muerteanim()
     {
         animpl.SetBool("Muerte", true);
@@ -259,8 +264,6 @@ public class Movimiento : MonoBehaviour
         animpl.SetBool("Muerte", false);
 
     }
-
-
 
 
 

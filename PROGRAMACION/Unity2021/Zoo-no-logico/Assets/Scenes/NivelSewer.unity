@@ -3796,6 +3796,8 @@ MonoBehaviour:
   rbd2: {fileID: 1161486905}
   Perdiste: {fileID: 1266901384}
   Animal: {fileID: 2145122138}
+  anim: {fileID: 0}
+  player: {fileID: 1982035562}
 --- !u!50 &1161486905
 Rigidbody2D:
   serializedVersion: 4
@@ -5695,8 +5697,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   notificacion: {fileID: 0}
-  notificacion2: {fileID: 0}
-  DineroNeg: 1
   ANALYTICS: {fileID: 0}
 --- !u!114 &1589625458
 MonoBehaviour:
@@ -7462,8 +7462,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   notificacion: {fileID: 0}
-  notificacion2: {fileID: 0}
-  DineroNeg: 1
   ANALYTICS: {fileID: 0}
 --- !u!1001 &2113143344
 PrefabInstance:
@@ -7766,7 +7764,7 @@ PrefabInstance:
     - target: {fileID: 315372966970289364, guid: 35cb1949af0e6a84f8409cc10e902993,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 14
+      value: 2.95
       objectReference: {fileID: 0}
     - target: {fileID: 315372966970289364, guid: 35cb1949af0e6a84f8409cc10e902993,
         type: 3}

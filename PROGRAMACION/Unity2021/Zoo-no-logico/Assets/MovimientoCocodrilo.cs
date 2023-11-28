@@ -28,7 +28,7 @@ public class MovimientoCocodrilo : MonoBehaviour
 
 
 
-    public enum GameState { Vivo, Muerto, Revivir }
+    public enum GameState { Vivo, Muerto, Revivir, Daño }
 
     public RawImage fondo;
     public float velocidadfondo;
@@ -95,7 +95,6 @@ public class MovimientoCocodrilo : MonoBehaviour
                 rb2d.velocity = new Vector2(velocidad, rb2d.velocity.y);
                 spritepl.flipX = false;
                 animpl.SetBool("Idle", false);
-                animpl.SetBool("Muerte", false);
 
             }
 
@@ -107,7 +106,6 @@ public class MovimientoCocodrilo : MonoBehaviour
                 rb2d.velocity = new Vector2(-velocidad, rb2d.velocity.y);
                 spritepl.flipX = true;
                 animpl.SetBool("Idle", false);
-                animpl.SetBool("Muerte", false);
 
             }
 
@@ -117,12 +115,12 @@ public class MovimientoCocodrilo : MonoBehaviour
             {
                 rb2d.velocity = new Vector2(rb2d.velocity.x, salto);
                 PuedeSaltar = false;
-                animpl.SetBool("Muerte", false);
+
             }
 
 
 
-            if (vertical != 0)
+            if (vertical != 0 && animpl.GetBool("Crouch") == false)
             {
                 animpl.SetBool("Salto", true);
             }
@@ -138,7 +136,6 @@ public class MovimientoCocodrilo : MonoBehaviour
             {
                 animpl.SetBool("Crouch", true);
                 Collider.size = CrouchingHeight;
-                animpl.SetBool("Muerte", false);
 
                 if (vertical < 0)
                 {
@@ -154,6 +151,18 @@ public class MovimientoCocodrilo : MonoBehaviour
 
 
         }
+    }
+
+    void MuerteTrue()
+    {
+        estado = GameState.Daño;
+    }
+
+    void MuerteFalse()
+    {
+
+        animpl.SetBool("Muerte", false);
+        estado = GameState.Vivo;
     }
 
     private void FlipSp()

@@ -28,7 +28,7 @@ public class MovimientoCiudad : MonoBehaviour
 
 
 
-    public enum GameState { Vivo, Muerto, Revivir }
+    public enum GameState { Vivo, Muerto, Revivir, Daño }
 
     public RawImage fondo;
     public float velocidadfondo;
@@ -105,7 +105,6 @@ public class MovimientoCiudad : MonoBehaviour
                 rb2d.velocity = new Vector2(velocidad, rb2d.velocity.y);
                 spritepl.flipX = false;
                 animpl.SetBool("Idle", false);
-                animpl.SetBool("Muerte", false);
 
             }
 
@@ -117,7 +116,6 @@ public class MovimientoCiudad : MonoBehaviour
                 rb2d.velocity = new Vector2(-velocidad, rb2d.velocity.y);
                 spritepl.flipX = true;
                 animpl.SetBool("Idle", false);
-                animpl.SetBool("Muerte", false);
 
             }
 
@@ -127,7 +125,6 @@ public class MovimientoCiudad : MonoBehaviour
             {
                 rb2d.velocity = new Vector2(rb2d.velocity.x, salto);
                 PuedeSaltar = false;
-                animpl.SetBool("Muerte", false);
             }
 
 
@@ -148,7 +145,6 @@ public class MovimientoCiudad : MonoBehaviour
             {
                 animpl.SetBool("Crouch", true);
                 Collider.size = CrouchingHeight;
-                animpl.SetBool("Muerte", false);
 
                 if (vertical < 0)
                 {
@@ -183,12 +179,24 @@ public class MovimientoCiudad : MonoBehaviour
 
     }
 
+
+    void MuerteTrue()
+    {
+        estado = GameState.Daño;
+    }
+
+    void MuerteFalse()
+    {
+
+        animpl.SetBool("Muerte", false);
+        estado = GameState.Vivo;
+    }
+
     void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.tag == "Plataformas")
         {
             PuedeSaltar = true;
-            animpl.SetBool("Muerte", false);
         }
 
         
@@ -216,13 +224,6 @@ public class MovimientoCiudad : MonoBehaviour
         if (collision.gameObject.tag == "Enemigo")
         {
             animpl.SetBool("Muerte", true);
-            //muerteanim();
-            animpl.SetBool("Idle", true);
-        }
-
-        else
-        {
-            animpl.SetBool("Muerte", false);
         }
 
         if(collision.gameObject.tag == "AnimalCapturado")
@@ -259,14 +260,7 @@ public class MovimientoCiudad : MonoBehaviour
             Destroy(Collectable05);
         }
     }
-
-    private IEnumerator muerteanim()
-    {
-        animpl.SetBool("Muerte", true);
-        yield return new WaitForSeconds(0.2f);
-        animpl.SetBool("Muerte", false);
-
-    }
+    
 
 
 

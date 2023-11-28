@@ -1425,8 +1425,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   notificacion: {fileID: 1892386418}
-  notificacion2: {fileID: 1368983783}
-  DineroNeg: 1
   ANALYTICS: {fileID: 0}
 --- !u!114 &642968872
 MonoBehaviour:
@@ -3602,8 +3600,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   notificacion: {fileID: 0}
-  notificacion2: {fileID: 0}
-  DineroNeg: 1
   ANALYTICS: {fileID: 0}
 --- !u!114 &1918701530
 MonoBehaviour:
@@ -4258,8 +4254,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   notificacion: {fileID: 0}
-  notificacion2: {fileID: 0}
-  DineroNeg: 1
   ANALYTICS: {fileID: 0}
 --- !u!114 &2080581601
 MonoBehaviour:

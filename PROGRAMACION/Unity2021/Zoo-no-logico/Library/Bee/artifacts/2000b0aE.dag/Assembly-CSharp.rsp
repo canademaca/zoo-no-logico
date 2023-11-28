@@ -373,6 +373,7 @@
 "Assets/MovimientoCampo.cs"
 "Assets/MovimientoCiudad.cs"
 "Assets/MovimientoCocodrilo.cs"
+"Assets/NotificationHandle.cs"
 "Assets/PajaroMiniGame.cs"
 "Assets/PopUpRecompensa.cs"
 "Assets/RecompensaMiniGame.cs"
