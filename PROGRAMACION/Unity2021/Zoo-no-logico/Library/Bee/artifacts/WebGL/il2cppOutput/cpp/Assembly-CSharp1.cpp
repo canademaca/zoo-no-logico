@@ -4479,31 +4479,24 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CambioDeDia_Minijuego_m1A1EA8E709AB5D0CB
 		int32_t L_1 = L_0;
 		RuntimeObject* L_2 = Box(Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_il2cpp_TypeInfo_var, &L_1);
 		MonoBehaviour_print_m9E6FF71C673B651F35DD418C293CFC50C46803B6(L_2, NULL);
-		// if (Monedas < 0 && PlayerPrefs.GetInt("Minigame") == 0)
-		int32_t L_3 = __this->___Monedas_4;
-		if ((((int32_t)L_3) >= ((int32_t)0)))
+		// if (PlayerPrefs.GetInt("Minigame") == 0)
+		int32_t L_3;
+		L_3 = PlayerPrefs_GetInt_m4D859DBEABAD3FB406C94485A0B2638A0C7F2987(_stringLiteral876A47A87C2ED30DACD2B47021ED3F9E4F1C089C, NULL);
+		if (L_3)
 		{
-			goto IL_003a;
-		}
-	}
-	{
-		int32_t L_4;
-		L_4 = PlayerPrefs_GetInt_m4D859DBEABAD3FB406C94485A0B2638A0C7F2987(_stringLiteral876A47A87C2ED30DACD2B47021ED3F9E4F1C089C, NULL);
-		if (L_4)
-		{
-			goto IL_003a;
+			goto IL_0031;
 		}
 	}
 	{
 		// SceneManager.LoadScene(SceneID);
-		int32_t L_5 = ___SceneID0;
+		int32_t L_4 = ___SceneID0;
 		il2cpp_codegen_runtime_class_init_inline(SceneManager_tA0EF56A88ACA4A15731AF7FDC10A869FA4C698FA_il2cpp_TypeInfo_var);
-		SceneManager_LoadScene_m0957E62F2A0A0243C79394E5B74E8EFA86BE5ED1(L_5, NULL);
+		SceneManager_LoadScene_m0957E62F2A0A0243C79394E5B74E8EFA86BE5ED1(L_4, NULL);
 		// PlayerPrefs.SetInt("Minigame", 1);
 		PlayerPrefs_SetInt_m956D3E2DB966F20CF42F842880DDF9E2BE94D948(_stringLiteral876A47A87C2ED30DACD2B47021ED3F9E4F1C089C, 1, NULL);
 	}
 
-IL_003a:
+IL_0031:
 	{
 		// }
 		return;

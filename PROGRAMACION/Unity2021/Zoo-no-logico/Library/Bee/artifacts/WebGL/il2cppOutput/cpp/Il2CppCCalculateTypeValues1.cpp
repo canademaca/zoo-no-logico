@@ -17447,10 +17447,6 @@ struct AnimalesMiniGame_t76FCD22307E89A314D479F3EB1B8A14658CB3374  : public Mono
 	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___Animal_10;
 	// UnityEngine.BoxCollider2D AnimalesMiniGame::Collider
 	BoxCollider2D_tF860C7737FFB062CEC06577E0CD8364EEC1D4EDA* ___Collider_11;
-	// MovimientoCiudad AnimalesMiniGame::player
-	MovimientoCiudad_t099F0E85B718426C66818DE9154DFA1B9604D046* ___player_12;
-	// Movimiento AnimalesMiniGame::player2
-	Movimiento_tA8F4483E30181F0133EDD52349401845790D63E7* ___player2_13;
 };
 
 // UnityEngine.AudioListener
