@@ -11176,6 +11176,10 @@ struct AnimalesMiniGame_t76FCD22307E89A314D479F3EB1B8A14658CB3374  : public Mono
 	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___Animal_10;
 	// UnityEngine.BoxCollider2D AnimalesMiniGame::Collider
 	BoxCollider2D_tF860C7737FFB062CEC06577E0CD8364EEC1D4EDA* ___Collider_11;
+	// MovimientoCiudad AnimalesMiniGame::player
+	MovimientoCiudad_t099F0E85B718426C66818DE9154DFA1B9604D046* ___player_12;
+	// Movimiento AnimalesMiniGame::player2
+	Movimiento_tA8F4483E30181F0133EDD52349401845790D63E7* ___player2_13;
 };
 
 // BotonAceptar
@@ -13830,9 +13834,9 @@ IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable6148[2] =
 IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable6150[7] = 
 {
 	static_cast<int32_t>(offsetof(UnicodeLineBreakingRules_t80BE36F5E16AE48FE7B6DE1C91D36B1142B4EC0E_StaticFields, ___s_Instance_0)),static_cast<int32_t>(offsetof(UnicodeLineBreakingRules_t80BE36F5E16AE48FE7B6DE1C91D36B1142B4EC0E, ___m_UnicodeLineBreakingRules_1)),static_cast<int32_t>(offsetof(UnicodeLineBreakingRules_t80BE36F5E16AE48FE7B6DE1C91D36B1142B4EC0E, ___m_LeadingCharacters_2)),static_cast<int32_t>(offsetof(UnicodeLineBreakingRules_t80BE36F5E16AE48FE7B6DE1C91D36B1142B4EC0E, ___m_FollowingCharacters_3)),static_cast<int32_t>(offsetof(UnicodeLineBreakingRules_t80BE36F5E16AE48FE7B6DE1C91D36B1142B4EC0E, ___m_UseModernHangulLineBreakingRules_4)),static_cast<int32_t>(offsetof(UnicodeLineBreakingRules_t80BE36F5E16AE48FE7B6DE1C91D36B1142B4EC0E_StaticFields, ___s_LeadingCharactersLookup_5)),static_cast<int32_t>(offsetof(UnicodeLineBreakingRules_t80BE36F5E16AE48FE7B6DE1C91D36B1142B4EC0E_StaticFields, ___s_FollowingCharactersLookup_6)),};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable6152[8] = 
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable6152[10] = 
 {
-	static_cast<int32_t>(offsetof(AnimalesMiniGame_t76FCD22307E89A314D479F3EB1B8A14658CB3374, ___velocidad_4)),static_cast<int32_t>(offsetof(AnimalesMiniGame_t76FCD22307E89A314D479F3EB1B8A14658CB3374, ___rbd2_5)),static_cast<int32_t>(offsetof(AnimalesMiniGame_t76FCD22307E89A314D479F3EB1B8A14658CB3374, ___Izquierda_6)),static_cast<int32_t>(offsetof(AnimalesMiniGame_t76FCD22307E89A314D479F3EB1B8A14658CB3374, ___Apoint_7)),static_cast<int32_t>(offsetof(AnimalesMiniGame_t76FCD22307E89A314D479F3EB1B8A14658CB3374, ___Bpoint_8)),static_cast<int32_t>(offsetof(AnimalesMiniGame_t76FCD22307E89A314D479F3EB1B8A14658CB3374, ___Perdiste_9)),static_cast<int32_t>(offsetof(AnimalesMiniGame_t76FCD22307E89A314D479F3EB1B8A14658CB3374, ___Animal_10)),static_cast<int32_t>(offsetof(AnimalesMiniGame_t76FCD22307E89A314D479F3EB1B8A14658CB3374, ___Collider_11)),};
+	static_cast<int32_t>(offsetof(AnimalesMiniGame_t76FCD22307E89A314D479F3EB1B8A14658CB3374, ___velocidad_4)),static_cast<int32_t>(offsetof(AnimalesMiniGame_t76FCD22307E89A314D479F3EB1B8A14658CB3374, ___rbd2_5)),static_cast<int32_t>(offsetof(AnimalesMiniGame_t76FCD22307E89A314D479F3EB1B8A14658CB3374, ___Izquierda_6)),static_cast<int32_t>(offsetof(AnimalesMiniGame_t76FCD22307E89A314D479F3EB1B8A14658CB3374, ___Apoint_7)),static_cast<int32_t>(offsetof(AnimalesMiniGame_t76FCD22307E89A314D479F3EB1B8A14658CB3374, ___Bpoint_8)),static_cast<int32_t>(offsetof(AnimalesMiniGame_t76FCD22307E89A314D479F3EB1B8A14658CB3374, ___Perdiste_9)),static_cast<int32_t>(offsetof(AnimalesMiniGame_t76FCD22307E89A314D479F3EB1B8A14658CB3374, ___Animal_10)),static_cast<int32_t>(offsetof(AnimalesMiniGame_t76FCD22307E89A314D479F3EB1B8A14658CB3374, ___Collider_11)),static_cast<int32_t>(offsetof(AnimalesMiniGame_t76FCD22307E89A314D479F3EB1B8A14658CB3374, ___player_12)),static_cast<int32_t>(offsetof(AnimalesMiniGame_t76FCD22307E89A314D479F3EB1B8A14658CB3374, ___player2_13)),};
 IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable6153[5] = 
 {
 	static_cast<int32_t>(offsetof(AnimalObstaculo_tC9B48C806D5F77632041217D024BB304B0CF33C9, ___velocidad_4)),static_cast<int32_t>(offsetof(AnimalObstaculo_tC9B48C806D5F77632041217D024BB304B0CF33C9, ___rbd2_5)),static_cast<int32_t>(offsetof(AnimalObstaculo_tC9B48C806D5F77632041217D024BB304B0CF33C9, ___Izquierda_6)),static_cast<int32_t>(offsetof(AnimalObstaculo_tC9B48C806D5F77632041217D024BB304B0CF33C9, ___Apoint_7)),static_cast<int32_t>(offsetof(AnimalObstaculo_tC9B48C806D5F77632041217D024BB304B0CF33C9, ___Bpoint_8)),};

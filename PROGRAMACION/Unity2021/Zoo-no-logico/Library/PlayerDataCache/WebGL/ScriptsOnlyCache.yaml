@@ -100,6 +100,12 @@ ScriptsOnlyBuild:
     - TMPro.TMP_SpriteAsset
     - TMPro.TMP_StyleSheet
     - TMPro.TextMeshProUGUI
+    UnityEditor.Graphs.dll:
+    - UnityEditor.Graphs.AnimationBlendTree.Graph
+    - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
+    - UnityEditor.Graphs.AnimationStateMachine.Graph
+    - UnityEditor.Graphs.AnimationStateMachine.GraphGUI
+    - UnityEditor.Graphs.AnimatorControllerTool
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
     - UnityEditor.TestTools.TestRunner.TestListCacheData
@@ -680,7 +686,7 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 6998}
     - Class: 114
-      Script: {instanceID: 25360}
+      Script: {instanceID: 22700}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -758,6 +764,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 5884}
     - Class: 114
       Script: {instanceID: 6998}
+    - Class: 114
+      Script: {instanceID: 22700}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -988,7 +996,7 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 6032}
     - Class: 114
-      Script: {instanceID: 25360}
+      Script: {instanceID: 22700}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -3209,7 +3217,7 @@ ScriptsOnlyBuild:
     className: CinemachineDollyCart
   - hash:
       serializedVersion: 2
-      Hash: 7196074c96b999665391267cc219d65f
+      Hash: 1cf6044be8c2715913042dbaa59631b9
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: AnimalesMiniGame
@@ -3781,6 +3789,6 @@ ScriptsOnlyBuild:
   - Assets/Scenes/NivelCiudad.unity
   - Assets/Scenes/NivelSewer.unity
   - Assets/Scenes/NivelTechos.unity
-  - Assets/Scenes/NivelCampoSnake.unity
   - Assets/Scenes/NivelCampoPajaro.unity
+  - Assets/Scenes/NivelCampoSnake.unity
   playerPath: C:/Users/Usuario/Documents/GitHub/zoo-no-logico-TAIM/PROGRAMACION/Build-TAIM

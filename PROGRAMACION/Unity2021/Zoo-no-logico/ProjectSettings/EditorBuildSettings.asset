@@ -84,9 +84,9 @@ EditorBuildSettings:
     path: Assets/Scenes/NivelTechos.unity
     guid: 41989c95bc701164ca0fcdcf95fd775b
   - enabled: 1
-    path: Assets/Scenes/NivelCampoSnake.unity
-    guid: a18db98f73782304e85a9d99a712e006
-  - enabled: 1
     path: Assets/Scenes/NivelCampoPajaro.unity
     guid: b8d2f048cdb9d264990b7f7c05f4d4c4
+  - enabled: 1
+    path: Assets/Scenes/NivelCampoSnake.unity
+    guid: 0f99c400e0716a7429e06ceaac314d3d
   m_configObjects: {}
