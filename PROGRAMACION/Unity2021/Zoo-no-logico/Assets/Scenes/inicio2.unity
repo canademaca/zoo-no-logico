@@ -1120,7 +1120,7 @@ MonoBehaviour:
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 2
+          m_IntArgument: 19
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -1213,10 +1213,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   LogrosJson: {fileID: 4900000, guid: dc4e0f294e6ecaf41a746fb96dbefda9, type: 3}
-  Popup: {fileID: 0}
-  Titulo: {fileID: 0}
   myLogroList:
     logros: []
+  LogrosObject: {fileID: 0}
+  jsonString: 
 --- !u!1 &1558287584
 GameObject:
   m_ObjectHideFlags: 0

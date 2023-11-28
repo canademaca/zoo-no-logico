@@ -56,4 +56,19 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/confirmar-reset.unity
     guid: 479c93100b629f94a837bd30d7796481
+  - enabled: 1
+    path: Assets/Scenes/Tutorial1/Barra-de-Popularidad.unity
+    guid: 9a2619f2e20600d4980548cd867a2d83
+  - enabled: 1
+    path: Assets/Scenes/Tutorial1/Cartas.unity
+    guid: 8b761ffcd98bf9149884b917bf6b21ee
+  - enabled: 1
+    path: Assets/Scenes/Tutorial1/Pantalla de Inicio 1.unity
+    guid: 9417f5670661fce4d83db65d78d7479c
+  - enabled: 1
+    path: Assets/Scenes/Tutorial1/ClickAqui-Codex.unity
+    guid: e0fa47a585db19145ada3fcfb3aee2e1
+  - enabled: 1
+    path: Assets/Scenes/Tutorial1/Codex.unity
+    guid: 3d891aedbd106914d94abb0a3090768f
   m_configObjects: {}
