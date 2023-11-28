@@ -105,7 +105,7 @@ public class CambioDeDia : MonoBehaviour {
     {
         print(PlayerPrefs.GetInt("Minigame"));
 
-        if (Monedas < 0 && PlayerPrefs.GetInt("Minigame") == 0)
+        if (PlayerPrefs.GetInt("Minigame") == 0)
         {
             SceneManager.LoadScene(SceneID);
             PlayerPrefs.SetInt("Minigame", 1);

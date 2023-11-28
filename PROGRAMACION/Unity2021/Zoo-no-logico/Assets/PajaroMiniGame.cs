@@ -7,7 +7,7 @@ using UnityEngine.SceneManagement;
 public class PajaroMiniGame : MonoBehaviour
 {
 
-    float velocidad = 3.2f;
+    float velocidad = 3.3f;
     public Rigidbody2D rbd2;
     bool Izquierda = true;
     public Transform Apoint;

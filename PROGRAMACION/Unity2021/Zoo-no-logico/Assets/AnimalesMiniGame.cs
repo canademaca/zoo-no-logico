@@ -16,8 +16,7 @@ public class AnimalesMiniGame : MonoBehaviour
     public GameObject Animal;
     public BoxCollider2D Collider;
 
-    [SerializeField] public MovimientoCiudad player;
-    [SerializeField] public Movimiento player2;
+
 
 
     // Start is called before the first frame update
@@ -34,17 +33,6 @@ public class AnimalesMiniGame : MonoBehaviour
             rbd2.velocity = new Vector2(velocidad, rbd2.velocity.y);
         }
 
-    }
-
-    void OnTriggerEnter2D(Collider2D collision)
-    {
-        if (collision.gameObject.tag == "Caida")
-        {
-            Destroy(Animal);
-            Perdiste.SetActive(true);
-            player.estado = MovimientoCiudad.GameState.Muerto;
-            player2.estado = Movimiento.GameState.Muerto;
-        }
     }
 }
 
