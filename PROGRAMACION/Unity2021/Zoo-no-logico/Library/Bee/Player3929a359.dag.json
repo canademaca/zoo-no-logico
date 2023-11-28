@@ -513,7 +513,17 @@
         505,
         506,
         507,
-        508
+        508,
+        509,
+        510,
+        511,
+        512,
+        513,
+        514,
+        515,
+        516,
+        517,
+        518
       ],
       "AllowUnexpectedOutput": true,
       "DebugActionIndex": 0
@@ -19572,15 +19582,126 @@
     },
     {
       "Annotation": "PreprocessJS C:/Users/Usuario/Documents/GitHub/zoo-no-logico-TAIM/PROGRAMACION/Build-TAIM/index.html",
-      "Action": "cd /d \"B:/2021.3.13f1/Editor/Data/PlaybackEngines/WebGLSupport/BuildTools\" && \"B:/2021.3.13f1/Editor/Data/PlaybackEngines/WebGLSupport/BuildTools/Emscripten/node/node.exe\" \"B:/2021.3.13f1/Editor/Data/PlaybackEngines/WebGLSupport/BuildTools/Preprocess.js\"  \"locals.cwd='B\\x3a/2021.3.13f1/Editor/Data/PlaybackEngines/WebGLSupport/BuildTools'\"  \"locals.inputPath='B\\x3a/2021.3.13f1/Editor/Data/PlaybackEngines/WebGLSupport/BuildTools/WebGLTemplates/Minimal/index.html'\"  \"locals.outputPath='C\\x3a/Users/Usuario/Documents/GitHub/zoo\\x2dno\\x2dlogico\\x2dTAIM/PROGRAMACION/Build\\x2dTAIM/index.html'\"  \"locals.minifyOutput=false\"  \"COMPANY_NAME='DefaultCompany'\" \"PRODUCT_NAME='Zoo\\x2dno\\x2dlogico'\" \"PRODUCT_VERSION='0.1'\" \"WIDTH=1280\" \"HEIGHT=720\" \"SPLASH_SCREEN_STYLE='Dark'\" \"BACKGROUND_COLOR='\\x23231F20'\" \"DATA_FILENAME='Build\\x2dTAIM.data.gz'\" \"FRAMEWORK_FILENAME='Build\\x2dTAIM.framework.js.gz'\" \"CODE_FILENAME='Build\\x2dTAIM.wasm.gz'\" \"MEMORY_FILENAME=''\" \"SYMBOLS_FILENAME=''\" \"BACKGROUND_FILENAME=''\" \"USE_WASM=true\" \"USE_THREADS=false\" \"USE_WEBGL_1_0=true\" \"USE_WEBGL_2_0=true\" \"WEBGL_POWER_PREFERENCE=2\" \"USE_DATA_CACHING=true\" \"DECOMPRESSION_FALLBACK=''\" \"TOTAL_MEMORY=268435456\" \"DEVELOPMENT_PLAYER=false\" \"UNITY_VERSION='2021.3.13f1'\" \"LOADER_FILENAME='Build\\x2dTAIM.loader.js'\"",
+      "Action": "cd /d \"B:/2021.3.13f1/Editor/Data/PlaybackEngines/WebGLSupport/BuildTools\" && \"B:/2021.3.13f1/Editor/Data/PlaybackEngines/WebGLSupport/BuildTools/Emscripten/node/node.exe\" \"B:/2021.3.13f1/Editor/Data/PlaybackEngines/WebGLSupport/BuildTools/Preprocess.js\"  \"locals.cwd='B\\x3a/2021.3.13f1/Editor/Data/PlaybackEngines/WebGLSupport/BuildTools'\"  \"locals.inputPath='B\\x3a/2021.3.13f1/Editor/Data/PlaybackEngines/WebGLSupport/BuildTools/WebGLTemplates/Default/index.html'\"  \"locals.outputPath='C\\x3a/Users/Usuario/Documents/GitHub/zoo\\x2dno\\x2dlogico\\x2dTAIM/PROGRAMACION/Build\\x2dTAIM/index.html'\"  \"locals.minifyOutput=false\"  \"COMPANY_NAME='DefaultCompany'\" \"PRODUCT_NAME='Zoo\\x2dno\\x2dlogico'\" \"PRODUCT_VERSION='0.1'\" \"WIDTH=1280\" \"HEIGHT=720\" \"SPLASH_SCREEN_STYLE='Dark'\" \"BACKGROUND_COLOR='\\x23231F20'\" \"DATA_FILENAME='Build\\x2dTAIM.data.gz'\" \"FRAMEWORK_FILENAME='Build\\x2dTAIM.framework.js.gz'\" \"CODE_FILENAME='Build\\x2dTAIM.wasm.gz'\" \"MEMORY_FILENAME=''\" \"SYMBOLS_FILENAME=''\" \"BACKGROUND_FILENAME=''\" \"USE_WASM=true\" \"USE_THREADS=false\" \"USE_WEBGL_1_0=true\" \"USE_WEBGL_2_0=true\" \"WEBGL_POWER_PREFERENCE=2\" \"USE_DATA_CACHING=true\" \"DECOMPRESSION_FALLBACK=''\" \"TOTAL_MEMORY=268435456\" \"DEVELOPMENT_PLAYER=false\" \"UNITY_VERSION='2021.3.13f1'\" \"LOADER_FILENAME='Build\\x2dTAIM.loader.js'\"",
       "Inputs": [
-        "B:/2021.3.13f1/Editor/Data/PlaybackEngines/WebGLSupport/BuildTools/WebGLTemplates/Minimal/index.html"
+        "B:/2021.3.13f1/Editor/Data/PlaybackEngines/WebGLSupport/BuildTools/WebGLTemplates/Default/index.html"
       ],
       "Outputs": [
         "C:/Users/Usuario/Documents/GitHub/zoo-no-logico-TAIM/PROGRAMACION/Build-TAIM/index.html"
       ],
       "AllowUnexpectedOutput": true,
       "DebugActionIndex": 507
+    },
+    {
+      "Annotation": "CopyFiles C:/Users/Usuario/Documents/GitHub/zoo-no-logico-TAIM/PROGRAMACION/Build-TAIM/TemplateData/favicon.ico",
+      "ActionType": "CopyFiles",
+      "Inputs": [
+        "B:/2021.3.13f1/Editor/Data/PlaybackEngines/WebGLSupport/BuildTools/WebGLTemplates/Default/TemplateData/favicon.ico"
+      ],
+      "Outputs": [
+        "C:/Users/Usuario/Documents/GitHub/zoo-no-logico-TAIM/PROGRAMACION/Build-TAIM/TemplateData/favicon.ico"
+      ],
+      "DebugActionIndex": 508
+    },
+    {
+      "Annotation": "CopyFiles C:/Users/Usuario/Documents/GitHub/zoo-no-logico-TAIM/PROGRAMACION/Build-TAIM/TemplateData/fullscreen-button.png",
+      "ActionType": "CopyFiles",
+      "Inputs": [
+        "B:/2021.3.13f1/Editor/Data/PlaybackEngines/WebGLSupport/BuildTools/WebGLTemplates/Default/TemplateData/fullscreen-button.png"
+      ],
+      "Outputs": [
+        "C:/Users/Usuario/Documents/GitHub/zoo-no-logico-TAIM/PROGRAMACION/Build-TAIM/TemplateData/fullscreen-button.png"
+      ],
+      "DebugActionIndex": 509
+    },
+    {
+      "Annotation": "CopyFiles C:/Users/Usuario/Documents/GitHub/zoo-no-logico-TAIM/PROGRAMACION/Build-TAIM/TemplateData/progress-bar-empty-dark.png",
+      "ActionType": "CopyFiles",
+      "Inputs": [
+        "B:/2021.3.13f1/Editor/Data/PlaybackEngines/WebGLSupport/BuildTools/WebGLTemplates/Default/TemplateData/progress-bar-empty-dark.png"
+      ],
+      "Outputs": [
+        "C:/Users/Usuario/Documents/GitHub/zoo-no-logico-TAIM/PROGRAMACION/Build-TAIM/TemplateData/progress-bar-empty-dark.png"
+      ],
+      "DebugActionIndex": 510
+    },
+    {
+      "Annotation": "CopyFiles C:/Users/Usuario/Documents/GitHub/zoo-no-logico-TAIM/PROGRAMACION/Build-TAIM/TemplateData/progress-bar-empty-light.png",
+      "ActionType": "CopyFiles",
+      "Inputs": [
+        "B:/2021.3.13f1/Editor/Data/PlaybackEngines/WebGLSupport/BuildTools/WebGLTemplates/Default/TemplateData/progress-bar-empty-light.png"
+      ],
+      "Outputs": [
+        "C:/Users/Usuario/Documents/GitHub/zoo-no-logico-TAIM/PROGRAMACION/Build-TAIM/TemplateData/progress-bar-empty-light.png"
+      ],
+      "DebugActionIndex": 511
+    },
+    {
+      "Annotation": "CopyFiles C:/Users/Usuario/Documents/GitHub/zoo-no-logico-TAIM/PROGRAMACION/Build-TAIM/TemplateData/progress-bar-full-dark.png",
+      "ActionType": "CopyFiles",
+      "Inputs": [
+        "B:/2021.3.13f1/Editor/Data/PlaybackEngines/WebGLSupport/BuildTools/WebGLTemplates/Default/TemplateData/progress-bar-full-dark.png"
+      ],
+      "Outputs": [
+        "C:/Users/Usuario/Documents/GitHub/zoo-no-logico-TAIM/PROGRAMACION/Build-TAIM/TemplateData/progress-bar-full-dark.png"
+      ],
+      "DebugActionIndex": 512
+    },
+    {
+      "Annotation": "CopyFiles C:/Users/Usuario/Documents/GitHub/zoo-no-logico-TAIM/PROGRAMACION/Build-TAIM/TemplateData/progress-bar-full-light.png",
+      "ActionType": "CopyFiles",
+      "Inputs": [
+        "B:/2021.3.13f1/Editor/Data/PlaybackEngines/WebGLSupport/BuildTools/WebGLTemplates/Default/TemplateData/progress-bar-full-light.png"
+      ],
+      "Outputs": [
+        "C:/Users/Usuario/Documents/GitHub/zoo-no-logico-TAIM/PROGRAMACION/Build-TAIM/TemplateData/progress-bar-full-light.png"
+      ],
+      "DebugActionIndex": 513
+    },
+    {
+      "Annotation": "PreprocessJS C:/Users/Usuario/Documents/GitHub/zoo-no-logico-TAIM/PROGRAMACION/Build-TAIM/TemplateData/style.css",
+      "Action": "cd /d \"B:/2021.3.13f1/Editor/Data/PlaybackEngines/WebGLSupport/BuildTools\" && \"B:/2021.3.13f1/Editor/Data/PlaybackEngines/WebGLSupport/BuildTools/Emscripten/node/node.exe\" \"B:/2021.3.13f1/Editor/Data/PlaybackEngines/WebGLSupport/BuildTools/Preprocess.js\"  \"locals.cwd='B\\x3a/2021.3.13f1/Editor/Data/PlaybackEngines/WebGLSupport/BuildTools'\"  \"locals.inputPath='B\\x3a/2021.3.13f1/Editor/Data/PlaybackEngines/WebGLSupport/BuildTools/WebGLTemplates/Default/TemplateData/style.css'\"  \"locals.outputPath='C\\x3a/Users/Usuario/Documents/GitHub/zoo\\x2dno\\x2dlogico\\x2dTAIM/PROGRAMACION/Build\\x2dTAIM/TemplateData/style.css'\"  \"locals.minifyOutput=false\"  \"COMPANY_NAME='DefaultCompany'\" \"PRODUCT_NAME='Zoo\\x2dno\\x2dlogico'\" \"PRODUCT_VERSION='0.1'\" \"WIDTH=1280\" \"HEIGHT=720\" \"SPLASH_SCREEN_STYLE='Dark'\" \"BACKGROUND_COLOR='\\x23231F20'\" \"DATA_FILENAME='Build\\x2dTAIM.data.gz'\" \"FRAMEWORK_FILENAME='Build\\x2dTAIM.framework.js.gz'\" \"CODE_FILENAME='Build\\x2dTAIM.wasm.gz'\" \"MEMORY_FILENAME=''\" \"SYMBOLS_FILENAME=''\" \"BACKGROUND_FILENAME=''\" \"USE_WASM=true\" \"USE_THREADS=false\" \"USE_WEBGL_1_0=true\" \"USE_WEBGL_2_0=true\" \"WEBGL_POWER_PREFERENCE=2\" \"USE_DATA_CACHING=true\" \"DECOMPRESSION_FALLBACK=''\" \"TOTAL_MEMORY=268435456\" \"DEVELOPMENT_PLAYER=false\" \"UNITY_VERSION='2021.3.13f1'\" \"LOADER_FILENAME='Build\\x2dTAIM.loader.js'\"",
+      "Inputs": [
+        "B:/2021.3.13f1/Editor/Data/PlaybackEngines/WebGLSupport/BuildTools/WebGLTemplates/Default/TemplateData/style.css"
+      ],
+      "Outputs": [
+        "C:/Users/Usuario/Documents/GitHub/zoo-no-logico-TAIM/PROGRAMACION/Build-TAIM/TemplateData/style.css"
+      ],
+      "AllowUnexpectedOutput": true,
+      "DebugActionIndex": 514
+    },
+    {
+      "Annotation": "CopyFiles C:/Users/Usuario/Documents/GitHub/zoo-no-logico-TAIM/PROGRAMACION/Build-TAIM/TemplateData/unity-logo-dark.png",
+      "ActionType": "CopyFiles",
+      "Inputs": [
+        "B:/2021.3.13f1/Editor/Data/PlaybackEngines/WebGLSupport/BuildTools/WebGLTemplates/Default/TemplateData/unity-logo-dark.png"
+      ],
+      "Outputs": [
+        "C:/Users/Usuario/Documents/GitHub/zoo-no-logico-TAIM/PROGRAMACION/Build-TAIM/TemplateData/unity-logo-dark.png"
+      ],
+      "DebugActionIndex": 515
+    },
+    {
+      "Annotation": "CopyFiles C:/Users/Usuario/Documents/GitHub/zoo-no-logico-TAIM/PROGRAMACION/Build-TAIM/TemplateData/unity-logo-light.png",
+      "ActionType": "CopyFiles",
+      "Inputs": [
+        "B:/2021.3.13f1/Editor/Data/PlaybackEngines/WebGLSupport/BuildTools/WebGLTemplates/Default/TemplateData/unity-logo-light.png"
+      ],
+      "Outputs": [
+        "C:/Users/Usuario/Documents/GitHub/zoo-no-logico-TAIM/PROGRAMACION/Build-TAIM/TemplateData/unity-logo-light.png"
+      ],
+      "DebugActionIndex": 516
+    },
+    {
+      "Annotation": "CopyFiles C:/Users/Usuario/Documents/GitHub/zoo-no-logico-TAIM/PROGRAMACION/Build-TAIM/TemplateData/webgl-logo.png",
+      "ActionType": "CopyFiles",
+      "Inputs": [
+        "B:/2021.3.13f1/Editor/Data/PlaybackEngines/WebGLSupport/BuildTools/WebGLTemplates/Default/TemplateData/webgl-logo.png"
+      ],
+      "Outputs": [
+        "C:/Users/Usuario/Documents/GitHub/zoo-no-logico-TAIM/PROGRAMACION/Build-TAIM/TemplateData/webgl-logo.png"
+      ],
+      "DebugActionIndex": 517
     },
     {
       "Annotation": "Player",
@@ -19597,10 +19718,20 @@
         500,
         505,
         506,
-        507
+        507,
+        508,
+        509,
+        510,
+        511,
+        512,
+        513,
+        514,
+        515,
+        516,
+        517
       ],
       "AllowUnexpectedOutput": true,
-      "DebugActionIndex": 508
+      "DebugActionIndex": 518
     }
   ],
   "FileSignatures": [
@@ -19919,7 +20050,7 @@
       "Filter": "*.js"
     },
     {
-      "Path": "B:/2021.3.13f1/Editor/Data/PlaybackEngines/WebGLSupport/BuildTools/WebGLTemplates/Minimal",
+      "Path": "B:/2021.3.13f1/Editor/Data/PlaybackEngines/WebGLSupport/BuildTools/WebGLTemplates/Default",
       "Recurse": 1
     },
     {
@@ -19969,7 +20100,7 @@
   ],
         "NamedNodes": {
           "all_tundra_nodes": 0,
-          "Player": 508
+          "Player": 518
         }
 ,  "DefaultNodes": [
     0

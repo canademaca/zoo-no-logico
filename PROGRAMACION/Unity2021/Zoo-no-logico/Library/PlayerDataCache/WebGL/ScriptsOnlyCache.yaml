@@ -86,7 +86,6 @@ ScriptsOnlyBuild:
     - UnityEditor.Tilemaps.GridBrush
     - UnityEditor.Tilemaps.GridPaintingState
     - UnityEditor.Tilemaps.GridPaletteBrushes
-    - UnityEditor.Tilemaps.GridPalettes
     - UnityEditor.Tilemaps.SceneViewGridManager
     - UnityEditor.Tilemaps.SceneViewOpenTilePaletteHelper
     - UnityEditor.Tilemaps.TileDragAndDropManager
@@ -680,7 +679,7 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 6998}
     - Class: 114
-      Script: {instanceID: 25360}
+      Script: {instanceID: 40678}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -988,7 +987,7 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 6032}
     - Class: 114
-      Script: {instanceID: 25360}
+      Script: {instanceID: 40678}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
