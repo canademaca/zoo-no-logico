@@ -29,6 +29,7 @@
 -define:PLATFORM_ARCH_64
 -define:UNITY_64
 -define:UNITY_INCLUDE_TESTS
+-define:UNITY_ANALYTICS
 -define:USE_SEARCH_ENGINE_API
 -define:USE_SEARCH_TABLE
 -define:USE_SEARCH_MODULE
@@ -402,6 +403,7 @@
 "Assets/Scripts/Comentarios.cs"
 "Assets/Scripts/ComprarJaula.cs"
 "Assets/Scripts/ConfirmacionDesocuparJaula.cs"
+"Assets/Scripts/ContadorTutorial.cs"
 "Assets/Scripts/CuposJaulas.cs"
 "Assets/Scripts/DeletePlayerPrefs.cs"
 "Assets/Scripts/DestroyCombination.cs"

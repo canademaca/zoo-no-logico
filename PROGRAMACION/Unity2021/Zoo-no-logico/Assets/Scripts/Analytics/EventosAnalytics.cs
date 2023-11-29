@@ -20,7 +20,7 @@ public class EventosAnalytics : MonoBehaviour
         try
         {
             var options = new InitializationOptions();
-            options.SetEnvironmentName("zoo-no-logico-sosasosena");
+            options.SetEnvironmentName("zoo-no-logico-ss");
             await UnityServices.InitializeAsync(options);
         }
         catch (ConsentCheckException e)
@@ -320,6 +320,7 @@ public class EventosAnalytics : MonoBehaviour
     {
         AnalyticsService.Instance.CustomData("leer_tutorial", new Dictionary<string, object>(){
             {"vez", PlayerPrefs.GetInt("tutorialTotales")},
+ 
 
         }); //TERMINADO
         Debug.Log("vez" + PlayerPrefs.GetInt("tutorialTotales"));
@@ -421,6 +422,35 @@ public class EventosAnalytics : MonoBehaviour
             {"logro27", PlayerPrefs.GetInt("Logro27")},
             {"logro28", PlayerPrefs.GetInt("Logro28")},
         }); //TERMINADO
+    }
+
+    public void salir_tutorial()
+    {
+        AnalyticsService.Instance.CustomData("salir_tutorial", new Dictionary<string, object>(){
+            {"vez", PlayerPrefs.GetInt("tutorialesrechazados")},
+
+        }); //TERMINADO
+        Debug.Log("vez" + PlayerPrefs.GetInt("tutorialTotales"));
+    }
+
+    public void abrir_tutorial()
+    {
+        AnalyticsService.Instance.CustomData("abrir_tutorial", new Dictionary<string, object>(){
+            {"vez", PlayerPrefs.GetInt("tutorialesAbiertos")},
+
+
+        }); //TERMINADO
+        Debug.Log("vez" + PlayerPrefs.GetInt("tutorialTotales"));
+    }
+
+    public void aceptar_tutorial()
+    {
+        AnalyticsService.Instance.CustomData("aceptar_tutorial", new Dictionary<string, object>(){
+            {"vez", PlayerPrefs.GetInt("tutorialSeguidos")},
+
+
+        }); //TERMINADO
+        Debug.Log("vez" + PlayerPrefs.GetInt("tutorialTotales"));
     }
 }
 
