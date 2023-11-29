@@ -28,7 +28,7 @@ public class MovimientoCocodrilo : MonoBehaviour
 
 
 
-    public enum GameState { Vivo, Muerto, Revivir, Daño }
+    public enum GameState { Vivo, Muerto, Revivir, DaÃ±o }
 
     public RawImage fondo;
     public float velocidadfondo;
@@ -72,8 +72,8 @@ public class MovimientoCocodrilo : MonoBehaviour
             if (horizontal != 0)
             {
 
-                float velocidadFinal = velocidadfondo * Time.deltaTime * horizontal;
-                fondo.uvRect = new Rect(fondo.uvRect.x + velocidadFinal, 0f, 1f, 1f);
+               // float velocidadFinal = velocidadfondo * Time.deltaTime * horizontal;
+                //fondo.uvRect = new Rect(fondo.uvRect.x + velocidadFinal, 0f, 1f, 1f);
 
 
             }
@@ -155,7 +155,7 @@ public class MovimientoCocodrilo : MonoBehaviour
 
     void MuerteTrue()
     {
-        estado = GameState.Daño;
+        estado = GameState.DaÃ±o;
     }
 
     void MuerteFalse()

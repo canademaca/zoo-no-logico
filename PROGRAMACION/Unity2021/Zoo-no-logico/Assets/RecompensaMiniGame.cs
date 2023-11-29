@@ -12,7 +12,7 @@ public class RecompensaMiniGame : MonoBehaviour
     public GameObject Collectable04;
     public GameObject Collectable05;
 
-    public int Monedas = 3000;
+    public int Monedas = 4000;
 
     // Start is called before the first frame update
     void Start()
@@ -33,27 +33,27 @@ public class RecompensaMiniGame : MonoBehaviour
     {
         if (Collectable01 == null)
         {
-            Monedas = Monedas + 750;
+            Monedas = Monedas + 1000;
         }
 
         if (Collectable02 == null)
         {
-            Monedas = Monedas + 750;
+            Monedas = Monedas + 1000;
         }
 
         if (Collectable03 == null)
         {
-            Monedas = Monedas + 750;
+            Monedas = Monedas + 1000;
         }
 
         if (Collectable04 == null)
         {
-            Monedas = Monedas + 750;
+            Monedas = Monedas + 1000;
         }
 
         if (Collectable05 == null)
         {
-            Monedas = Monedas + 750;
+            Monedas = Monedas + 1000;
         }
 
         PlayerPrefs.SetInt("Moneditas", PlayerPrefs.GetInt("Moneditas") + Monedas);

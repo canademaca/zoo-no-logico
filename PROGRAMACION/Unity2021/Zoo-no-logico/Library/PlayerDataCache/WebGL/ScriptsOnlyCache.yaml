@@ -100,6 +100,14 @@ ScriptsOnlyBuild:
     - TMPro.TMP_SpriteAsset
     - TMPro.TMP_StyleSheet
     - TMPro.TextMeshProUGUI
+    UnityEditor.Graphs.dll:
+    - UnityEditor.Graphs.AnimationBlendTree.Graph
+    - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
+    - UnityEditor.Graphs.AnimationStateMachine.AnyStateNode
+    - UnityEditor.Graphs.AnimationStateMachine.Graph
+    - UnityEditor.Graphs.AnimationStateMachine.GraphGUI
+    - UnityEditor.Graphs.AnimationStateMachine.StateNode
+    - UnityEditor.Graphs.AnimatorControllerTool
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
     - UnityEditor.TestTools.TestRunner.TestListCacheData
@@ -680,7 +688,7 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 6998}
     - Class: 114
-      Script: {instanceID: 24734}
+      Script: {instanceID: 35906}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -759,7 +767,7 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 6998}
     - Class: 114
-      Script: {instanceID: 24734}
+      Script: {instanceID: 35906}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -885,8 +893,6 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 1612}
     - Class: 114
-      Script: {instanceID: 1614}
-    - Class: 114
       Script: {instanceID: 2282}
     - Class: 114
       Script: {instanceID: 2516}
@@ -990,7 +996,7 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 6032}
     - Class: 114
-      Script: {instanceID: 24734}
+      Script: {instanceID: 35906}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
