@@ -110,4 +110,46 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Tutorial1/TUTORIAL2.unity
     guid: 57e5e5818cb3ee547803861d0d27967d
+  - enabled: 1
+    path: Assets/Scenes/Tutorial1/Cruza4.unity
+    guid: fc31efc71519bdd4981f36166029f593
+  - enabled: 1
+    path: Assets/Scenes/Tutorial1/ClickAqui-Cruza.unity
+    guid: 8ffe264c44d706c45b6988f66356d99a
+  - enabled: 1
+    path: Assets/Scenes/Tutorial1/2Cruza5.unity
+    guid: 838be5417df258b44a521075a3936029
+  - enabled: 1
+    path: Assets/Scenes/Tutorial1/ClickAqui-Tienda.unity
+    guid: c38a22a4f1b4dda41bf98de8fa117c5e
+  - enabled: 1
+    path: Assets/Scenes/Tutorial1/Tienda1.unity
+    guid: f6b5b0f03277b6f409e1e01e912c7f56
+  - enabled: 1
+    path: Assets/Scenes/Tutorial1/Tienda2.unity
+    guid: 5f772418b147d3f42aa91d59543f65c4
+  - enabled: 1
+    path: Assets/Scenes/Tutorial1/ClickAqui-Stasis.unity
+    guid: b66005910ba602641b4c2bdbb0dd678d
+  - enabled: 1
+    path: Assets/Scenes/Tutorial1/Stasis1.unity
+    guid: 30a799d6d81c92845bc51d7b04470190
+  - enabled: 1
+    path: Assets/Scenes/Tutorial1/Stasis2.unity
+    guid: 5ff263441eeab0c4494a995c355481f4
+  - enabled: 1
+    path: Assets/Scenes/Tutorial1/ClickAqui-TD.unity
+    guid: 143cfc9a4b8401b45a466369453a9a2b
+  - enabled: 1
+    path: Assets/Scenes/Tutorial1/TerminarDia1.unity
+    guid: 8473a728e2056bb4981ea947d7e05e79
+  - enabled: 1
+    path: Assets/Scenes/Tutorial1/TerminarDia2.unity
+    guid: 6d6fd28788f871243b115f56bcc26b9f
+  - enabled: 1
+    path: Assets/Scenes/Tutorial1/TerminarDia3.unity
+    guid: 07cb38627ffdaac4abe61d57b8b648cc
+  - enabled: 1
+    path: Assets/Scenes/Tutorial1/Fin_Tuto.unity
+    guid: 34b9598bba7893445abd47fb111d2657
   m_configObjects: {}
