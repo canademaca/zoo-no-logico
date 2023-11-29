@@ -8,7 +8,7 @@ public class MovimientoCiudad : MonoBehaviour
 {
 
     private float velocidad = 3.9f;
-    private float salto = 11; 
+    private float salto = 12; 
     private bool PuedeSaltar;
     private bool PuedeAgachar;
     private float horizontal;
@@ -28,7 +28,7 @@ public class MovimientoCiudad : MonoBehaviour
 
 
 
-    public enum GameState { Vivo, Muerto, Revivir, Daño }
+    public enum GameState { Vivo, Muerto, Revivir, DaÃ±o }
 
     public RawImage fondo;
     public float velocidadfondo;
@@ -77,14 +77,14 @@ public class MovimientoCiudad : MonoBehaviour
             if (horizontal != 0)
             {
 
-                float velocidadFinal = velocidadfondo * Time.deltaTime * horizontal;
+                /*float velocidadFinal = velocidadfondo * Time.deltaTime * horizontal;
                 fondo.uvRect = new Rect(fondo.uvRect.x + velocidadFinal, 0f, 1f, 1f);
 
                 float velFinal = velnubes * Time.deltaTime * horizontal;
                 nubes.uvRect = new Rect(nubes.uvRect.x + velFinal, 0f, 1f, 1f);
 
                 float veloFinal = velciudad * Time.deltaTime * horizontal;
-                ciudad.uvRect = new Rect(ciudad.uvRect.x + veloFinal, 0f, 1f, 1f);
+                ciudad.uvRect = new Rect(ciudad.uvRect.x + veloFinal, 0f, 1f, 1f);*/
 
             }
 
@@ -182,7 +182,7 @@ public class MovimientoCiudad : MonoBehaviour
 
     void MuerteTrue()
     {
-        estado = GameState.Daño;
+        estado = GameState.DaÃ±o;
     }
 
     void MuerteFalse()

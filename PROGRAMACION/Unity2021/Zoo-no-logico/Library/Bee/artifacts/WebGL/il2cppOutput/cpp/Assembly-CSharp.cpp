@@ -4121,9 +4121,9 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ChangeSceneRandom_LoadRandomScene_m56CF3
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		// int random = Random.Range(18, 22);
+		// int random = Random.Range(18, 19);
 		int32_t L_0;
-		L_0 = Random_Range_m6763D9767F033357F88B6637F048F4ACA4123B68(((int32_t)18), ((int32_t)22), NULL);
+		L_0 = Random_Range_m6763D9767F033357F88B6637F048F4ACA4123B68(((int32_t)18), ((int32_t)19), NULL);
 		// SceneManager.LoadScene(random, LoadSceneMode.Single);
 		il2cpp_codegen_runtime_class_init_inline(SceneManager_tA0EF56A88ACA4A15731AF7FDC10A869FA4C698FA_il2cpp_TypeInfo_var);
 		SceneManager_LoadScene_mC4BD32145437F282CAA13E1A8685001061E79D98(L_0, 0, NULL);
