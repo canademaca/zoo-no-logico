@@ -422,6 +422,25 @@ public class EventosAnalytics : MonoBehaviour
             {"logro28", PlayerPrefs.GetInt("Logro28")},
         }); //TERMINADO
     }
+
+    public void saltear_cinematica()
+    {
+        AnalyticsService.Instance.CustomData("saltear_cinematica", new Dictionary<string, object>(){
+            {"vez", PlayerPrefs.GetInt("cinematicasSalteadas")},
+            {"cinematica", PlayerPrefs.GetString("Cinematica")},
+
+        }); //TERMINADO
+        Debug.Log("vez" + PlayerPrefs.GetInt("enviarStasisTotales"));
+    }
+
+    public void cartas_abiertas()
+    {
+        AnalyticsService.Instance.CustomData("cartas_abiertas", new Dictionary<string, object>(){
+            {"vez", PlayerPrefs.GetInt("cartasLeidasTotales")},
+
+        }); //TERMINADO
+        Debug.Log("vez" + PlayerPrefs.GetInt("enviarStasisTotales"));
+    }
 }
 
 

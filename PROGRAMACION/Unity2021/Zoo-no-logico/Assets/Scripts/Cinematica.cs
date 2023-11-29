@@ -14,10 +14,8 @@ public class Cinematica : MonoBehaviour
     [SerializeField] public GameObject saltear;
     [SerializeField] public GameObject fondo;
 
+    // Start is called before the first frame update  
 
-
-
-    // Start is called before the first frame update
     void Awake()
     {
         video = GameObject.Find(PlayerPrefs.GetString("Cinematica")).GetComponent<VideoPlayer>();
