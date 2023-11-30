@@ -333,6 +333,7 @@
 "Assets/Scripts/ChangeScene.cs"
 "Assets/Scripts/CheatCodes.cs"
 "Assets/Scripts/CheckCuposCruza.cs"
+"Assets/Scripts/Cinematica.cs"
 "Assets/Scripts/CloseWindow.cs"
 "Assets/Scripts/CloseWindow1.cs"
 "Assets/Scripts/CodexCruzas.cs"
@@ -370,6 +371,7 @@
 "Assets/Scripts/RandomPercent.cs"
 "Assets/Scripts/RawImageTexture.cs"
 "Assets/Scripts/ResetSave.cs"
+"Assets/Scripts/SaltearCinematica.cs"
 "Assets/Scripts/save-load/GameData.cs"
 "Assets/Scripts/save-load/SaveManager.cs"
 "Assets/Scripts/save-load/SaveSystem.cs"
@@ -384,10 +386,10 @@
 "Assets/Scripts/TogglePerdida.cs"
 "Assets/Scripts/UIZoomImage.cs"
 "Assets/Scripts/UnlockStoreAnimals.cs"
-"Assets/SonidoBotones.cs"
-"Assets/Sonidos/BotonSonido.cs"
 "Assets/Sonidos/MusicManager.cs"
-"Assets/Sonidos/Mute.cs"
+"Assets/Sonidos/Sonido Boton.cs"
+"Assets/Sonidos/Sound/Menu/SonidoMenu.cs"
+"Assets/VidPlayer.cs"
 -langversion:9.0
 
 /deterministic

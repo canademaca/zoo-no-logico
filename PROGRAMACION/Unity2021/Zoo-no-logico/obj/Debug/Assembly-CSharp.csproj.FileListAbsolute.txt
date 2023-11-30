@@ -1,2 +1,4 @@
 C:\Users\Alumno\Documents\GitHub\zoo-no-logico\PROGRAMACION\ESTE ES EL QUE HAY QUE EDITAR\Zoo-no-logico\obj\Debug\Assembly-CSharp.csproj.AssemblyReference.cache
 C:\Users\Alumno\Documents\GitHub\zoo-no-logico\PROGRAMACION\ESTE ES EL QUE HAY QUE EDITAR\Zoo-no-logico\obj\Debug\Assembly-CSharp.csproj.CoreCompileInputs.cache
+D:\ZOO HISTORIA\zoo-no-logico-AJA\PROGRAMACION\Unity2021\Zoo-no-logico\obj\Debug\Assembly-CSharp.csprojAssemblyReference.cache
+D:\ZOO HISTORIA\zoo-no-logico-AJA\PROGRAMACION\Unity2021\Zoo-no-logico\obj\Debug\Assembly-CSharp.csproj.CoreCompileInputs.cache
