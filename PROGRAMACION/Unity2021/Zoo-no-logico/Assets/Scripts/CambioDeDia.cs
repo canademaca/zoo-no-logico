@@ -79,7 +79,7 @@ public class CambioDeDia : MonoBehaviour {
             Pantalla.SetActive(false);
             PlayerPrefs.SetInt("Dias", numTurno);
             PopularidadBarra.SetActive(true);
-            PlayerPrefs.SetInt("EventoCartas", 1);
+            //PlayerPrefs.SetInt("EventoCartas", 1);
         }
         else
         {

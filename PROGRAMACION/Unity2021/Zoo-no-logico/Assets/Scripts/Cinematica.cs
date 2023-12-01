@@ -22,6 +22,7 @@ public class Cinematica : MonoBehaviour
         video = GameObject.Find(PlayerPrefs.GetString("Cinematica")).GetComponent<VideoPlayer>();
 
         print("ESCENA " + PlayerPrefs.GetString("Cinematica"));
+        PlayerPrefs.SetInt("EventoCartas", 1);
     }
 
 

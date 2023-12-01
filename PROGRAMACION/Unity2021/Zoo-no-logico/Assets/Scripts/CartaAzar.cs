@@ -65,12 +65,12 @@ public class CartaAzar : MonoBehaviour
 
     }
 
-
+    int numAzar;
 
     public void ElegirCarta()
     {
 
-        PlayerPrefs.SetInt("cartasTotales", PlayerPrefs.GetInt("cartasTotales") + 1);
+        //PlayerPrefs.SetInt("cartasTotales", PlayerPrefs.GetInt("cartasTotales") + 1);
 
         Reset = 1;
         PlayerPrefs.SetInt("ResetListCartas", Reset);
@@ -83,7 +83,7 @@ public class CartaAzar : MonoBehaviour
         while (checkeo)
         {
 
-            int numAzar = Random.Range(1, 11);
+            numAzar++;
 
             if (checkeo = true && listaRandom.Contains(numAzar))
             {
