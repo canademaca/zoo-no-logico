@@ -475,7 +475,6 @@ MonoBehaviour:
   sound: {fileID: 0}
   Sonidoboton: {fileID: 0}
   scriptDia: {fileID: 0}
-  CinematicaNumero: 0
 --- !u!114 &80595234
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -744,7 +743,6 @@ MonoBehaviour:
   sound: {fileID: 0}
   Sonidoboton: {fileID: 0}
   scriptDia: {fileID: 0}
-  CinematicaNumero: 0
 --- !u!1 &115112219
 GameObject:
   m_ObjectHideFlags: 0
@@ -1408,6 +1406,7 @@ MonoBehaviour:
   aveDesbloqueada: {fileID: 0}
   serpienteDesbloqueada: {fileID: 0}
   speed: 10
+  CinematicaNumero: 0
   ANALYTICS: {fileID: 0}
 --- !u!114 &208765377
 MonoBehaviour:
@@ -1453,9 +1452,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 208765380}
-        m_TargetAssemblyTypeName: ChangeScene, Assembly-CSharp
-        m_MethodName: OpenCinematic
+      - m_Target: {fileID: 208765376}
+        m_TargetAssemblyTypeName: CambioDeDia, Assembly-CSharp
+        m_MethodName: Pasar
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1519,7 +1518,6 @@ MonoBehaviour:
   sound: {fileID: 0}
   Sonidoboton: {fileID: 0}
   scriptDia: {fileID: 208765376}
-  CinematicaNumero: 0
 --- !u!1 &218527429
 GameObject:
   m_ObjectHideFlags: 0
@@ -4759,7 +4757,6 @@ MonoBehaviour:
   sound: {fileID: 0}
   Sonidoboton: {fileID: 0}
   scriptDia: {fileID: 0}
-  CinematicaNumero: 0
 --- !u!1 &688691294
 GameObject:
   m_ObjectHideFlags: 0
@@ -5658,6 +5655,7 @@ MonoBehaviour:
   aveDesbloqueada: {fileID: 1747486269}
   serpienteDesbloqueada: {fileID: 1223251120}
   speed: 10
+  CinematicaNumero: 0
   ANALYTICS: {fileID: 0}
 --- !u!114 &905196905
 MonoBehaviour:
@@ -6171,7 +6169,6 @@ MonoBehaviour:
   sound: {fileID: 0}
   Sonidoboton: {fileID: 0}
   scriptDia: {fileID: 0}
-  CinematicaNumero: 0
 --- !u!114 &968904795
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6904,7 +6901,6 @@ MonoBehaviour:
   sound: {fileID: 0}
   Sonidoboton: {fileID: 0}
   scriptDia: {fileID: 0}
-  CinematicaNumero: 0
 --- !u!114 &1064331004
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8889,7 +8885,6 @@ MonoBehaviour:
   sound: {fileID: 0}
   Sonidoboton: {fileID: 0}
   scriptDia: {fileID: 0}
-  CinematicaNumero: 0
 --- !u!114 &1411704581
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10137,7 +10132,6 @@ MonoBehaviour:
   sound: {fileID: 0}
   Sonidoboton: {fileID: 0}
   scriptDia: {fileID: 0}
-  CinematicaNumero: 0
 --- !u!114 &1675872949
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11272,7 +11266,6 @@ MonoBehaviour:
   sound: {fileID: 0}
   Sonidoboton: {fileID: 0}
   scriptDia: {fileID: 0}
-  CinematicaNumero: 0
 --- !u!114 &1789728117
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11822,7 +11815,6 @@ MonoBehaviour:
   sound: {fileID: 1140703058}
   Sonidoboton: {fileID: 8300000, guid: e959b8fe2c4ea514495adf9332b02644, type: 3}
   scriptDia: {fileID: 0}
-  CinematicaNumero: 0
 --- !u!1 &1842176360
 GameObject:
   m_ObjectHideFlags: 0
@@ -11952,7 +11944,6 @@ MonoBehaviour:
   sound: {fileID: 0}
   Sonidoboton: {fileID: 0}
   scriptDia: {fileID: 0}
-  CinematicaNumero: 0
 --- !u!114 &1849446192
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13538,6 +13529,7 @@ MonoBehaviour:
   aveDesbloqueada: {fileID: 0}
   serpienteDesbloqueada: {fileID: 0}
   speed: 10
+  CinematicaNumero: 0
   ANALYTICS: {fileID: 0}
 --- !u!114 &1983965513
 MonoBehaviour:

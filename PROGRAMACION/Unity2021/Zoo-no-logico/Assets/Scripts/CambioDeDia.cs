@@ -24,6 +24,8 @@ public class CambioDeDia : MonoBehaviour {
 
     public float speed = 10.0f;
 
+    public int CinematicaNumero;
+
 
     [SerializeField] private GameObject ANALYTICS;
 
@@ -74,18 +76,35 @@ public class CambioDeDia : MonoBehaviour {
     {
         if (!PantallaPostEvento)
         {
+            print("Ayudame loco");
             numTurno++;
             textoTurno.text = "DIA: " + numTurno.ToString();
             Pantalla.SetActive(false);
             PlayerPrefs.SetInt("Dias", numTurno);
             PopularidadBarra.SetActive(true);
             //PlayerPrefs.SetInt("EventoCartas", 1);
+
+            Debug.Log("Victoria: " + PlayerPrefs.GetInt("ShowVictoryCutscene"));
+
+            if ((PlayerPrefs.GetInt("Dias") % 3 == 0 || PlayerPrefs.GetInt("Dias") == 1) && PlayerPrefs.GetInt("Dias") <= 15)
+            {
+
+                CinematicaNumero = PlayerPrefs.GetInt("CinematicaNumero");
+                CinematicaNumero += 1;
+                PlayerPrefs.SetInt("CinematicaNumero", CinematicaNumero);
+                PlayerPrefs.SetString("Cinematica", "C0" + CinematicaNumero);
+                SceneManager.LoadScene(17);
+                print(PlayerPrefs.GetString("Cinematica"));
+                print("historia");
+            }
         }
         else
         {
             Pantalla.SetActive(false);
             PlayerPrefs.SetInt("ImpuestoXDiasSinCruzas", PlayerPrefs.GetInt("ImpuestoXDiasSinCruzas"));
         }
+
+        
     }
 
     public void AbrirPantalla()
@@ -123,16 +142,25 @@ public class CambioDeDia : MonoBehaviour {
 
         if (Popularidad >= 100 && PlayerPrefs.GetInt("Ganaste")==0)
         {
+            PlayerPrefs.SetString("Cinematica", "GOOD_END");
+            SceneManager.LoadScene(17);
+            print(PlayerPrefs.GetString("Cinematica"));
+            print("ganar");
             PlayerPrefs.SetInt("Ganaste", 1);
             PlayerPrefs.SetInt("ActivadorCalificacion", 1);
             ANALYTICS.SendMessage("ganar");
+            PlayerPrefs.SetInt("ShowVictoryCutscene", 1);
             
         }
         else if (Popularidad <= 0 && PlayerPrefs.GetInt("Ganaste") == 0)
         {
+            PlayerPrefs.SetString("Cinematica", "BAD_END");
+            SceneManager.LoadScene(17);
+            print(PlayerPrefs.GetString("Cinematica"));
+            print("perder");
             ANALYTICS.SendMessage("game_over");
-            
-            
+            PlayerPrefs.SetInt("ShowDefeatCutscene", 1);
+
         }
         else 
         {

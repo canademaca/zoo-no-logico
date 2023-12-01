@@ -9,7 +9,7 @@ public class ChangeScene : MonoBehaviour {
     public AudioSource sound;
     public AudioClip Sonidoboton;
     [SerializeField] public CambioDeDia scriptDia;
-    public int CinematicaNumero;
+    
 
 
 
@@ -27,36 +27,7 @@ public class ChangeScene : MonoBehaviour {
 
     public void OpenCinematic()
     {
-        if(PlayerPrefs.GetInt("Popularidad") >= 100 && PlayerPrefs.GetInt("Ganaste") == 0)
-        {
-            scriptDia.Pasar();
-            PlayerPrefs.SetString("Cinematica", "GOOD_END");
-            SceneManager.LoadScene(17);
-            print(PlayerPrefs.GetString("Cinematica"));
-        }
-        else if(PlayerPrefs.GetInt("Popularidad") <= 0 && PlayerPrefs.GetInt("Ganaste") == 0)
-        {
-            scriptDia.Pasar();
-            PlayerPrefs.SetString("Cinematica", "BAD_END");
-            SceneManager.LoadScene(17);
-            print(PlayerPrefs.GetString("Cinematica"));
-        }
-        else if(PlayerPrefs.GetInt("Dias") % 3 == 0)
-        {
-            scriptDia.Pasar();
-            CinematicaNumero = PlayerPrefs.GetInt("CinematicaNumero");
-            CinematicaNumero += 1;
-            PlayerPrefs.SetInt("CinematicaNumero", CinematicaNumero);
-            PlayerPrefs.SetString("Cinematica", "C0" + CinematicaNumero);
-            SceneManager.LoadScene(17);
-            print(PlayerPrefs.GetString("Cinematica"));
-        }
-        else
-        {
-            scriptDia.Pasar();
-            print("pasar dia");
-        }
-        
+                        
     }
 
     public void VolverAJugar()
