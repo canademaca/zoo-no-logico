@@ -27,7 +27,21 @@ public class ChangeScene : MonoBehaviour {
 
     public void OpenCinematic()
     {
-        if (PlayerPrefs.GetInt("Dias") % 3 == 0)
+        if(PlayerPrefs.GetInt("Popularidad") >= 100 && PlayerPrefs.GetInt("Ganaste") == 0)
+        {
+            scriptDia.Pasar();
+            PlayerPrefs.SetString("Cinematica", "GOOD_END");
+            SceneManager.LoadScene(17);
+            print(PlayerPrefs.GetString("Cinematica"));
+        }
+        else if(PlayerPrefs.GetInt("Popularidad") <= 0 && PlayerPrefs.GetInt("Ganaste") == 0)
+        {
+            scriptDia.Pasar();
+            PlayerPrefs.SetString("Cinematica", "BAD_END");
+            SceneManager.LoadScene(17);
+            print(PlayerPrefs.GetString("Cinematica"));
+        }
+        else if(PlayerPrefs.GetInt("Dias") % 3 == 0)
         {
             scriptDia.Pasar();
             CinematicaNumero = PlayerPrefs.GetInt("CinematicaNumero");
@@ -36,13 +50,13 @@ public class ChangeScene : MonoBehaviour {
             PlayerPrefs.SetString("Cinematica", "C0" + CinematicaNumero);
             SceneManager.LoadScene(17);
             print(PlayerPrefs.GetString("Cinematica"));
-            
         }
         else
         {
             scriptDia.Pasar();
             print("pasar dia");
         }
+        
     }
 
     public void VolverAJugar()

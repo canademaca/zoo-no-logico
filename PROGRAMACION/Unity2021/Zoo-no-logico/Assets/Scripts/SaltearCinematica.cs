@@ -7,8 +7,16 @@ public class SaltearCinematica : MonoBehaviour
 {
     [SerializeField] private VideoPlayer video;
     [SerializeField] public GameObject script;
-
     [SerializeField] private GameObject ANALYTICS;
+    [SerializeField] public GameObject C01;
+    [SerializeField] public GameObject C02;
+    [SerializeField] public GameObject C03;
+    [SerializeField] public GameObject C04;
+    [SerializeField] public GameObject C05;
+    [SerializeField] public GameObject C06;
+    [SerializeField] public GameObject GOOD_END;
+    [SerializeField] public GameObject BAD_END;
+    public GameObject videoContainer;
 
     void Start()
     {
@@ -17,7 +25,46 @@ public class SaltearCinematica : MonoBehaviour
 
     void Awake()
     {
-        video = GameObject.Find(PlayerPrefs.GetString("Cinematica")).GetComponent<VideoPlayer>();
+        switch (PlayerPrefs.GetString("Cinematica"))
+        {
+            case "C01":
+                videoContainer = C01;
+                break;
+            case "C02":
+                
+                videoContainer = C02;
+                break;
+            case "C03":
+                
+                videoContainer = C03;
+                break;
+            case "C04":
+                
+                videoContainer = C04;
+                break;
+            case "C05":
+                
+                videoContainer = C05;
+                break;
+            case "C06":
+                
+                videoContainer = C06;
+                break;
+            case "GOOD_END":
+                
+                videoContainer = GOOD_END;
+                break;
+            case "BAD_END":
+                
+                videoContainer = BAD_END;
+                break;
+
+
+            default:
+                print("Cinematica no existe");
+                break;
+        }
+        video = videoContainer.GetComponent<VideoPlayer>();
     }
 
     public void Saltear()

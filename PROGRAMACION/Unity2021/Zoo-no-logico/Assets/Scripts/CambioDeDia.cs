@@ -126,14 +126,13 @@ public class CambioDeDia : MonoBehaviour {
             PlayerPrefs.SetInt("Ganaste", 1);
             PlayerPrefs.SetInt("ActivadorCalificacion", 1);
             ANALYTICS.SendMessage("ganar");
-            PlayerPrefs.SetString("Cinematica", "GOOD_END");
-            SceneManager.LoadScene(17);
+            
         }
         else if (Popularidad <= 0 && PlayerPrefs.GetInt("Ganaste") == 0)
         {
             ANALYTICS.SendMessage("game_over");
-            PlayerPrefs.SetString("Cinematica", "BAD_END");
-            SceneManager.LoadScene(17);
+            
+            
         }
         else 
         {
