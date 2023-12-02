@@ -3211,7 +3211,6 @@ MonoBehaviour:
   sound: {fileID: 0}
   Sonidoboton: {fileID: 0}
   scriptDia: {fileID: 0}
-  CinematicaNumero: 0
 --- !u!114 &557075229
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5050,7 +5049,6 @@ MonoBehaviour:
   sound: {fileID: 0}
   Sonidoboton: {fileID: 0}
   scriptDia: {fileID: 0}
-  CinematicaNumero: 0
 --- !u!114 &862084972
 MonoBehaviour:
   m_ObjectHideFlags: 0
