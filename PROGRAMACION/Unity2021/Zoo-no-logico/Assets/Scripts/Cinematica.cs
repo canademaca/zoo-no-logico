@@ -24,6 +24,7 @@ public class Cinematica : MonoBehaviour
     [SerializeField] public GameObject BAD_END;
 
     public GameObject videoContainer;
+    public float volume;
 
 
     // Start is called before the first frame update 
@@ -77,6 +78,8 @@ public class Cinematica : MonoBehaviour
         }
         video = videoContainer.GetComponent<VideoPlayer>();
         PlayerPrefs.SetInt("EventoCartas", 1);
+        volume = PlayerPrefs.GetFloat("VolMusic");
+        video.SetDirectAudioVolume(0, volume);
     }
 
 
