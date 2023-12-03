@@ -18,6 +18,8 @@ public class MusicManager : MonoBehaviour
         {
             Destroy(gameObject);
                 }
+
+        PlayerPrefs.SetFloat("VolMusic", 0.5f);
     }
 
     private void Update()
@@ -28,7 +30,7 @@ public class MusicManager : MonoBehaviour
         }
         else
         {
-            gameObject.GetComponent<AudioSource>().volume = 0.2f;
+            gameObject.GetComponent<AudioSource>().volume = PlayerPrefs.GetFloat("VolMusic");
         }
     }
 }
