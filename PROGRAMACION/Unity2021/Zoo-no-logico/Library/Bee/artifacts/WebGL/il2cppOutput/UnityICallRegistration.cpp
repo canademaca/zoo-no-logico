@@ -3246,6 +3246,10 @@ void RegisterAllStrippedInternalCalls()
 		void Register_UnityEngine_Video_VideoPlayer_Play();
 		Register_UnityEngine_Video_VideoPlayer_Play();
 
+		//System.Void UnityEngine.Video.VideoPlayer::SetDirectAudioVolume(System.UInt16,System.Single)
+		void Register_UnityEngine_Video_VideoPlayer_SetDirectAudioVolume();
+		Register_UnityEngine_Video_VideoPlayer_SetDirectAudioVolume();
+
 		//System.Void UnityEngine.Video.VideoPlayer::Stop()
 		void Register_UnityEngine_Video_VideoPlayer_Stop();
 		Register_UnityEngine_Video_VideoPlayer_Stop();

@@ -70,6 +70,7 @@ public class SaltearCinematica : MonoBehaviour
     public void Saltear()
     {
         PlayerPrefs.SetInt("cinematicasSalteadas", PlayerPrefs.GetInt("cinematicasSalteadas") + 1);
+        PlayerPrefs.SetString("Cinematica", videoContainer.name);
         ANALYTICS.SendMessage("saltear_cinematica");
         script.SendMessage("onMovieEnd", video);
     }

@@ -704,6 +704,7 @@ UnityEngine.UISystemProfilerApi::AddMarker
 UnityEngine.UISystemProfilerApi::BeginSample
 UnityEngine.UISystemProfilerApi::EndSample
 UnityEngine.Video.VideoPlayer::Play
+UnityEngine.Video.VideoPlayer::SetDirectAudioVolume
 UnityEngine.Video.VideoPlayer::Stop
 UnityEngine.Video.VideoPlayer::set_url
 UnityEngine.Yoga.Native::YGConfigGetUseWebDefaults
