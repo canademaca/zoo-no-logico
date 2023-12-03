@@ -75,5 +75,6 @@ public class DeletePlayerPrefs : MonoBehaviour {
         }
 
         PlayerPrefs.SetInt("CinematicaNumero", 0);
+        PlayerPrefs.SetFloat("VolMusic", 0.5f);
     }
 }

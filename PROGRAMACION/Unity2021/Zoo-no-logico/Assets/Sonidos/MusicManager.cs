@@ -19,12 +19,12 @@ public class MusicManager : MonoBehaviour
             Destroy(gameObject);
                 }
 
-        PlayerPrefs.SetFloat("VolMusic", 0.5f);
+        
     }
 
     private void Update()
     {
-        if (SceneManager.GetActiveScene().buildIndex == 17)
+        if (SceneManager.GetActiveScene().buildIndex == 17 || SceneManager.GetActiveScene().buildIndex == 0 || SceneManager.GetActiveScene().buildIndex == 1)
         {
             gameObject.GetComponent<AudioSource>().volume = 0;
         }
