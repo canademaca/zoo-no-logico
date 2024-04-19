@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine;
+
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
@@ -31,7 +31,7 @@ public class NewDayMoney : MonoBehaviour {
     private int newMoneyInt;
     float Monedas;
     private int impuestoDeuda = 0;
-    float  impuestoDiario = 0;
+    float impuestoDiario = 0;
 
     float impuestoDiarioMultiplicador;
     float impuestoPorNoHacerCruzasMultiplicador;
@@ -45,18 +45,33 @@ public class NewDayMoney : MonoBehaviour {
     public CruzaList myCruzaList = new CruzaList();
 
     // Use this for initialization
-    void Start () {
+    void Start()
+    {
 
         myCruzaList = JsonUtility.FromJson<CruzaList>(Cruzas.text);
+        PlayerPrefs.SetFloat("cageDivisor", cageDivisor);
 
-        
 
-        for (int i = 0; i<20; i++){
-            if (PlayerPrefs.GetInt("Jaula" + i) != 89) { PlayerPrefs.SetInt("cage"+ i+"Money", myCruzaList.cruza[PlayerPrefs.GetInt("Jaula" + i)].dinero);}
+        for (int i = 0; i < 20; i++)
+        {
+            if (PlayerPrefs.GetString("Jaula" + i).Length > 0)
+            {
+                int jaul = int.Parse(PlayerPrefs.GetString("Jaula" + i));
+                print(PlayerPrefs.GetInt("Jaula" + i));
+                print(jaul);
+                if (int.Parse(PlayerPrefs.GetString("Jaula" + i)) != 89)
+                {
+                    PlayerPrefs.SetInt("cage" + i + "Money", myCruzaList.cruza[int.Parse(PlayerPrefs.GetString("Jaula" + i))].dinero);
+                    print(PlayerPrefs.GetString("Jaula" + i));
+                }
+
+            }
         }
-
-
     }
+
+
+
+    
 
     private void Update()
     {
@@ -85,32 +100,37 @@ public class NewDayMoney : MonoBehaviour {
 
         //float x = PlayerPrefs.GetInt("Dias");
 
-        impuestoDiarioMultiplicador = Mathf.Log(PlayerPrefs.GetInt("Dias"), 2);
+        //impuestoDiarioMultiplicador = Mathf.Log(PlayerPrefs.GetInt("Dias"), 2);
+        impuestoDiarioMultiplicador = 2;
 
         if (impuestoDiarioMultiplicador < 1)
         {
             impuestoDiarioMultiplicador = 1;
         }
 
-        if (PlayerPrefs.GetInt("ImpuestoXDiasSinCruzas") <= 2)
+        if (PlayerPrefs.GetInt("ImpuestoXDiasSinCruzas") > 3)
         {
-            impuestoPorNoHacerCruzasMultiplicador = 1;
-        }
-        else
-        {
+
             impuestoPorNoHacerCruzasMultiplicador = PlayerPrefs.GetInt("ImpuestoXDiasSinCruzas") + 1;
         }
+        else 
+        {
+            impuestoPorNoHacerCruzasMultiplicador = 0;
+        }
+        int impuestoPopularidad = impuestoDeuda + Mathf.RoundToInt(impuestoPorNoHacerCruzasMultiplicador * impuestoDiarioMultiplicador);
+
+        // impuestoDiario = ((PlayerPrefs.GetInt("JaulasOcupadas") * 300) + 150) * impuestoDiarioMultiplicador * impuestoPorNoHacerCruzasMultiplicador;
+
+        impuestoDiario = ((PlayerPrefs.GetInt("JaulasOcupadas") * 400) + 150);
+
+        PlayerPrefs.SetInt("Popularidad", PlayerPrefs.GetInt("Popularidad") - impuestoPopularidad);
 
 
 
-        impuestoDiario = ((PlayerPrefs.GetInt("JaulasOcupadas") * 300) + 150) * impuestoDiarioMultiplicador * impuestoPorNoHacerCruzasMultiplicador;
-
-        PlayerPrefs.SetInt("Popularidad", PlayerPrefs.GetInt("Popularidad") - impuestoDeuda);
-
-
-
-        newMoney = ((PlayerPrefs.GetInt("cage1Money") / cageDivisor + PlayerPrefs.GetInt("cage2Money") / cageDivisor + PlayerPrefs.GetInt("cage3Money") / cageDivisor + PlayerPrefs.GetInt("cage4Money")/cageDivisor + PlayerPrefs.GetInt("cage5Money")/cageDivisor + PlayerPrefs.GetInt("cage6Money") / cageDivisor + PlayerPrefs.GetInt("cage7Money") / cageDivisor + PlayerPrefs.GetInt("cage8Money") / cageDivisor + PlayerPrefs.GetInt("cage9Money")/cageDivisor + PlayerPrefs.GetInt("cage10Money")/cageDivisor + PlayerPrefs.GetInt("cage11Money") / cageDivisor + PlayerPrefs.GetInt("cage12Money") / cageDivisor + PlayerPrefs.GetInt("cage13Money") / cageDivisor + PlayerPrefs.GetInt("cage14Money") / cageDivisor + PlayerPrefs.GetInt("cage15Money") / cageDivisor + PlayerPrefs.GetInt("cage16Money") / cageDivisor + PlayerPrefs.GetInt("cage17Money") / cageDivisor + PlayerPrefs.GetInt("cage18Money") / cageDivisor + PlayerPrefs.GetInt("cage19Money") / cageDivisor + PlayerPrefs.GetInt("cage20Money") / cageDivisor) * popularityMultipliyer) - (int)impuestoDiario;
-
+        newMoney = ((PlayerPrefs.GetInt("cage0Money") / cageDivisor + PlayerPrefs.GetInt("cage1Money") / cageDivisor + PlayerPrefs.GetInt("cage2Money") / cageDivisor + PlayerPrefs.GetInt("cage3Money") / cageDivisor + PlayerPrefs.GetInt("cage4Money")/cageDivisor + PlayerPrefs.GetInt("cage5Money")/cageDivisor + PlayerPrefs.GetInt("cage6Money") / cageDivisor + PlayerPrefs.GetInt("cage7Money") / cageDivisor + PlayerPrefs.GetInt("cage8Money") / cageDivisor + PlayerPrefs.GetInt("cage9Money")/cageDivisor + PlayerPrefs.GetInt("cage10Money")/cageDivisor + PlayerPrefs.GetInt("cage11Money") / cageDivisor + PlayerPrefs.GetInt("cage12Money") / cageDivisor + PlayerPrefs.GetInt("cage13Money") / cageDivisor + PlayerPrefs.GetInt("cage14Money") / cageDivisor + PlayerPrefs.GetInt("cage15Money") / cageDivisor + PlayerPrefs.GetInt("cage16Money") / cageDivisor + PlayerPrefs.GetInt("cage17Money") / cageDivisor + PlayerPrefs.GetInt("cage18Money") / cageDivisor + PlayerPrefs.GetInt("cage19Money") / cageDivisor + PlayerPrefs.GetInt("cage20Money") / cageDivisor) * popularityMultipliyer) - (int)impuestoDiario;
+        PlayerPrefs.SetFloat("popularityMultipliyer", popularityMultipliyer);
+        PlayerPrefs.SetFloat("impuestoDiario", impuestoDiario);
+        PlayerPrefs.SetInt("impuestoDeuda", impuestoPopularidad);
         if (newMoney < 0)
         {
             newMoneyText.color = Color.red;
@@ -121,6 +141,7 @@ public class NewDayMoney : MonoBehaviour {
         }
 
         newMoneyInt = (int)newMoney;
+        PlayerPrefs.SetInt("newMoneyInt", newMoneyInt);
         newMoneyText.text = newMoneyInt.ToString();
         Monedas = PlayerPrefs.GetInt("Moneditas");
         Monedas = Monedas + (int)newMoneyInt;

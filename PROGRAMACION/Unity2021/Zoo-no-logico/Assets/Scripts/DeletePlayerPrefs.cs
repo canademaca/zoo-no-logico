@@ -6,9 +6,11 @@ using UnityEngine.UI;
 public class DeletePlayerPrefs : MonoBehaviour {
 
     public Button continuar;
+    private string[] listaAnimales = new string[] { "Carpincho", "Cocodrilo", "Arana", "Zorro", "Murcielago", "Ave", "Serpiente" };
 
-	// Use this for initialization
-	void Start () {
+
+    // Use this for initialization
+    void Start () {
 		
 	}
 	
@@ -35,7 +37,7 @@ public class DeletePlayerPrefs : MonoBehaviour {
         //PlayerPrefs.SetInt("Jaula4", 89);
         //PlayerPrefs.SetInt("Jaula5", 89);
 
-        PlayerPrefs.SetInt("Moneditas", 12500);
+        PlayerPrefs.SetInt("Moneditas", 15000);
 
         PlayerPrefs.SetInt("Popularidad", 20);
 
@@ -49,6 +51,14 @@ public class DeletePlayerPrefs : MonoBehaviour {
         PlayerPrefs.SetString("PrimeraCombinacion", "true");
         PlayerPrefs.SetInt("inicioPartidaTotales", inicioPartidaTotales + 1);
 
+        PlayerPrefs.SetString("animal1Tienda", listaAnimales[0]);
+        PlayerPrefs.SetString("animal2Tienda", listaAnimales[1]);
+        PlayerPrefs.SetString("animal3Tienda", listaAnimales[2]);
+        PlayerPrefs.SetString("animal4Tienda", listaAnimales[3]);
+        PlayerPrefs.SetString("animal5Tienda", listaAnimales[4]);
+        PlayerPrefs.SetString("animal6Tienda", listaAnimales[5]);
+        PlayerPrefs.SetString("animal7Tienda", listaAnimales[6]);
+
         for (int i = 0; i < 20; i++)
         {
             PlayerPrefs.SetInt("Jaula" + i, 89);
@@ -57,5 +67,11 @@ public class DeletePlayerPrefs : MonoBehaviour {
         PlayerPrefs.SetInt("ResetListCartas", 0);
         PlayerPrefs.SetInt("EventoCartas", 0);
         PlayerPrefs.SetInt("DesactivarNoti", 0);
+
+        for (int i = 0; i < 28; i++)
+        {
+            PlayerPrefs.SetInt("Logro" + i, 0);
+            PlayerPrefs.SetInt("Logro" + i + "Unlocked", 0);
+        }
     }
 }
