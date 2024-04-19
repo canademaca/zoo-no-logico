@@ -19,13 +19,19 @@ public class EventosAnalytics : MonoBehaviour
     {
         try
         {
-            await UnityServices.InitializeAsync();
-            List<string> consentIdentifiers = await AnalyticsService.Instance.CheckForRequiredConsents();
+            var options = new InitializationOptions();
+            options.SetEnvironmentName("zoo-no-logico-aja");
+            await UnityServices.InitializeAsync(options);
         }
         catch (ConsentCheckException e)
         {
             // Something went wrong when checking the GeoIP, check the e.Reason and handle appropriately.
         }
+    }
+
+    public void ConsentGiven()
+    {
+        AnalyticsService.Instance.StartDataCollection();
     }
 
     public void game_over()
@@ -415,6 +421,25 @@ public class EventosAnalytics : MonoBehaviour
             {"logro27", PlayerPrefs.GetInt("Logro27")},
             {"logro28", PlayerPrefs.GetInt("Logro28")},
         }); //TERMINADO
+    }
+
+    public void saltear_cinematica()
+    {
+        AnalyticsService.Instance.CustomData("saltear_cinematica", new Dictionary<string, object>(){
+            {"vez", PlayerPrefs.GetInt("cinematicasSalteadas")},
+            {"cinematica", PlayerPrefs.GetString("Cinematica")},
+
+        }); //TERMINADO
+        Debug.Log("vez" + PlayerPrefs.GetInt("enviarStasisTotales"));
+    }
+
+    public void cartas_abiertas()
+    {
+        AnalyticsService.Instance.CustomData("cartas_abiertas", new Dictionary<string, object>(){
+            {"vez", PlayerPrefs.GetInt("cartasLeidasTotales")},
+
+        }); //TERMINADO
+        Debug.Log("vez" + PlayerPrefs.GetInt("enviarStasisTotales"));
     }
 }
 

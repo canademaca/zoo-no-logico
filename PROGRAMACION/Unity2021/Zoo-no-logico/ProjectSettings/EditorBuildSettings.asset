@@ -56,4 +56,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/confirmar-reset.unity
     guid: 479c93100b629f94a837bd30d7796481
+  - enabled: 1
+    path: "Assets/Scenes/cinem\xE1tica.unity"
+    guid: f6968abbb0a2e7f41b0f78b8ee9af895
   m_configObjects: {}

@@ -6,15 +6,28 @@ using UnityEngine.SceneManagement;
 public class ChangeScene : MonoBehaviour {
 
     [SerializeField] private GameObject ANALYTICS;
+    public AudioSource sound;
+    public AudioClip Sonidoboton;
+    [SerializeField] public CambioDeDia scriptDia;
+    
+
+
+
     void Start()
-    { 
+    {
         ANALYTICS = GameObject.FindGameObjectWithTag("ANALYTICS");
+
     }
 
 
     public void MoveToScene(int sceneID)
     {
         SceneManager.LoadScene(sceneID);
+    }
+
+    public void OpenCinematic()
+    {
+                        
     }
 
     public void VolverAJugar()
@@ -39,5 +52,11 @@ public class ChangeScene : MonoBehaviour {
         ANALYTICS.SendMessage(accion);
     }
 
-    
+    public void SoundButton()
+    {
+        sound.clip = Sonidoboton;
+        sound.enabled = false;
+        sound.enabled = true;
+        DontDestroyOnLoad(this);
+    }
 }

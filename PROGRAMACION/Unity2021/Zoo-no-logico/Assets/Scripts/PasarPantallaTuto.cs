@@ -7,6 +7,7 @@ public class PasarPantallaTuto : MonoBehaviour {
 
     public GameObject Pantalla;
     public GameObject Pantalla2;
+    public GameObject Pantalla3;
 
     // Use this for initialization
     void Start () {
@@ -22,11 +23,14 @@ public class PasarPantallaTuto : MonoBehaviour {
     {
         Pantalla.SetActive(false);
         Pantalla2.SetActive(true);
+        Pantalla3.SetActive(true);
+
     }
 
     public void VolverPantalla()
     {
         Pantalla.SetActive(true);
         Pantalla2.SetActive(false);
+        Pantalla3.SetActive(false);
     }
 }

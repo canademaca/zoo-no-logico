@@ -73,5 +73,8 @@ public class DeletePlayerPrefs : MonoBehaviour {
             PlayerPrefs.SetInt("Logro" + i, 0);
             PlayerPrefs.SetInt("Logro" + i + "Unlocked", 0);
         }
+
+        PlayerPrefs.SetInt("CinematicaNumero", 0);
+        PlayerPrefs.SetFloat("VolMusic", 0.5f);
     }
 }
